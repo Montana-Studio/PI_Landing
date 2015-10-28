@@ -1,0 +1,10 @@
+.cli-section {
+	@include span-columns(12);
+	background: {position:center;size:cover;repeat:no-repeat;image:url('../img/bg-cli-2.jpg');}
+	.inside-section{  
+		p {
+			color:#fff;
+			line-height: 2em;
+		}
+	}
+}

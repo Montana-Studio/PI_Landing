@@ -1,0 +1,16 @@
+.marcas-section {
+	@include span-columns(12);
+	.inside-section{  
+		.title-section {
+			color:$first_color;
+		}
+		.title-line {
+			@extend .bg-colorfull;
+			@include background-image(left);
+		}
+		p {
+			color:$first_color;
+			line-height: 2em;
+		}
+	}
+}

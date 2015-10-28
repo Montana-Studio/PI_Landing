@@ -31,6 +31,9 @@ html {
 		@extend .no-margins;
 	}
 }
+input {
+	outline: none;
+}
 .btn-green {
 	@extend .text-center;
 	color:$green_color;
@@ -39,4 +42,33 @@ html {
 	padding: 12px 20px;
 	font:{family:$primary_font;size:em(15);}
 	text:{transform:uppercase;}
+}
+.bg-colorfull {
+	@include background-image(linear-gradient(top, $color_blue 0%, $green_color 100%));
+}
+.title-section {
+	color:#fff;
+	font:{family:$primary_font;size:em(75);}
+	text:{transform:uppercase;}
+	@include span-columns(5);
+	line-height: 1.2em;
+}
+.title-line {
+	@include span-columns(1);
+	height: 5px;
+	width: 40px;
+	background: {color:#fff;}
+	clear: both;
+	margin:{top:20px;left:10px;}
+}
+.inside-section{  
+	@include outer-container(65%);
+	margin:{top:150px;bottom:200px;}
+	p {
+		@include span-columns(5);
+		font:{family:$primary_font;size:em(18);weight:300;}
+		color:#fff;
+		clear: both;
+		line-height: 2em;
+	}
 }

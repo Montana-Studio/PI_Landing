@@ -1,0 +1,67 @@
+.footer-pi {
+	@include span-columns(12);
+	background: $second_color;
+	.newsletter-footer {
+		@include outer-container(80%);
+		margin:30px auto;
+		border:0;
+		border-top:1px solid #292a2d; 
+		border-bottom:1px solid #292a2d; 
+		padding:35px 0;
+		.title-newsl {
+			@include span-columns(3);
+			color:$green_color;
+			font:{family:$primary_font;size:em(20);weight:300;}
+			text:{transform:capitalize;}
+		}
+		.form-newsletter {
+			@include span-columns(9);
+			input {
+				@include span-columns(4);
+				background: none;
+				border:1px solid $third_color; 
+				border-radius:5px;
+				padding: 10px;
+				font:{family:$primary_font;size:em(13);weight:300;}
+				color:$third_color;
+				&.btn-green-full {
+					background: $green_color;
+					border:0;
+					color:#fff;
+					text:{transform:uppercase;}
+					font:{weight:bold;}
+				}
+			}
+		}
+	}
+	.social-connect {
+		@include outer-container(40%);
+		margin:{bottom:30px;}
+		ul {
+			@include span-columns(12);
+			li {
+				@include span-columns(4);
+				display: inline-block;
+				list-style: none;
+				a {
+					@include span-columns(12);
+					display: table;
+					.icon-social {
+						@include span-columns(2);
+						display: table-cell;
+						vertical-align: middle;
+					}
+					.link-social {
+						@include span-columns(10);
+						float: none;
+						font:{family:$primary_font;size:em(12);}
+						color:$green_color;
+						display: table-cell;
+						vertical-align: middle;
+						padding:{left:4px;}
+					}
+				}
+			}
+		}
+	}
+}
