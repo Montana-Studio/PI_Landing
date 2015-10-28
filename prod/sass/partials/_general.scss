@@ -1,0 +1,42 @@
+a{
+	text:{decoration:none;}
+}
+.hide{
+	display:none;
+}
+.show{
+	display:block;
+}
+.center-div{
+	margin:0 auto;
+}
+.center-absolute{
+	left:0;
+	right:0;
+}
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.no-margins {
+	margin: 0;
+}
+html {
+	body {
+		@extend .no-margins;
+	}
+}
+.btn-green {
+	@extend .text-center;
+	color:$green_color;
+	border: 1px solid $green_color;
+	border-radius: 5px;
+	padding: 12px 20px;
+	font:{family:$primary_font;size:em(15);}
+	text:{transform:uppercase;}
+}
