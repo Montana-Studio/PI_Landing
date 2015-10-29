@@ -2,9 +2,30 @@
 	@include span-columns(12);
 	background: {position:center;size:cover;repeat:no-repeat;image:url('../img/bg-cli-2.jpg');}
 	.inside-section{  
-		p {
-			color:#fff;
-			line-height: 2em;
+		.clientes-info {
+			@include span-columns(5);
+			.title-section {
+				@include span-columns(12);
+			}
+			p {
+				@include span-columns(12);
+				color:#fff;
+				line-height: 2em;
+			}
+			button {
+				color:$color_blue;
+			}
+		}
+		.logotipe-sect {
+			@include span-columns(6.5);
+			float: right;
+			ul {
+				@include pad(0);
+				li {
+					list-style: none;
+					display: inline-block;
+				}
+			}
 		}
 	}
 }

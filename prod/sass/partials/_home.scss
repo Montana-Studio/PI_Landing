@@ -6,7 +6,7 @@
 	position: relative;
 	//@include background-image(linear-gradient(top, $color_blue 0%, $green_color 100%));
 	@include background-image(linear-gradient(hsla(0, 100%, 100%, 0.25) 0%, hsla(0, 100%, 100%, 0.08) 50%), linear-gradient(#fcfcfc, darken(#e1e1e1, 10%))); 
-	padding:{bottom:200px;}
+	padding:{bottom:120px;} 
 	.menu-pi {
 		@include span-columns(12);
 		padding: 5px 0;

@@ -1,5 +1,5 @@
 .iphone6-animations {
-	  @include animation(iphone6 1.5s linear 1500ms forwards);
+	  @include animation(iphone6 1.2s linear 1500ms forwards);
 	  @include animation-delay(2s);
 	  @include transform-style(preserve-3d);
 	  @include perspective(300px);
@@ -7,19 +7,14 @@
 }
 @include keyframes(iphone6) {
 	0% {
-		//opacity: 0;
-		//@include transform(translate3d(-100%,0,0)rotateY(-90deg));
-		//perspective-origin: left right;
+		opacity: 0;
+		@include transform(translateX(-500px)rotateY(0deg));
 	}
 	50% {
-		//opacity: 0.2;
-		//@include transform(translate3d(-50%,0,0)rotateY(-45deg));
-		//perspective-origin: left right;
+		opacity: 0.2; 
 	}
 	100% {
-		//opacity: 1;
-		
-		//@include transform(translate3d(0,0,0));
-		//perspective-origin: right left;
+		opacity: 1;
+		@include transform(translateX(0)rotateY(0deg));
 	}
 }

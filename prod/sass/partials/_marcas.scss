@@ -5,12 +5,18 @@
 			color:$first_color;
 		}
 		.title-line {
-			@extend .bg-colorfull;
-			@include background-image(left);
+			background: $green_color;
+			//@include background-image(linear-gradient(left, $green_color 0%, #4a7fcd 100%));
 		}
 		p {
 			color:$first_color;
 			line-height: 2em;
+		}
+		button {
+			@include span-columns(3);
+			clear: both;
+			background: none;
+			margin:{top:20px;}
 		}
 	}
 }

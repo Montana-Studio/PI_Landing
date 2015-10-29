@@ -12,5 +12,12 @@
 		p {
 			@include span-columns(12);
 		}
+		button {
+			@include span-columns(5);
+			clear: both;
+			float: none;
+			margin: 0 auto !important;
+			font:{weight:bold;}
+		}
 	}
 }	
