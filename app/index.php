@@ -7,24 +7,28 @@
 
 	<title>Power Influencer</title>
 
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
 	<link rel="stylesheet" href="css/PI_landing.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jparticle.jquery.min.js"></script>
 	<script src="js/PI_landing.min.js"></script>
 
 </head>
 <body>
-	<section class="content-home-pi">
+	<section class="content-home-pi" id="content-home">
 		<div class="menu-pi">
 			<div class="menu-center">
 				<div class="logo"></div>
 				<div class="menu-list">
 					<ul>
-						<li>Home</li>
-						<li>Plataforma</li>
-						<li>Cliente</li>
-						<li>Influencers</li>
-						<li class="ingresar-btn-menu">Ingresar</li>
+						<li><a class="animation-pi" href="#content-home">Home</a></li>
+						<li><a class="animation-pi" href="#sect-plataforma">Plataforma</a></li>
+						<li><a class="animation-pi" href="#clientes-section">Cliente</a></li>
+						<li><a class="animation-pi" href="#influencer-section">Influencers</a></li>
+						<li>
+							<div class="button raised hoverable ingresar-btn-menu">
+						    	<a href="#"><div class="anim"></div>Ingresar</a>
+						    </div>
+						</li>
 					</ul>
 				</div>	
 			</div>
@@ -32,15 +36,19 @@
 		<div class="content-slidr">
 			<h1>Donec vitae tristique</h1>
 			<h2>Explore and share stories from friends and the world around you.</h2>
-			<div class="btn-green">Cliente</div>
-			<div class="btn-green">Influencers</div>
+			 <div class="button raised hoverable home-btnone">
+		    	<a class="animation-pi" href="#clientes-section"><div class="anim"></div>Cliente</a>
+		    </div>
+		    <div class="button raised hoverable home-btntwo">
+		    	<a class="animation-pi" href="#influencer-section"><div class="anim"></div>Influencers</a>
+		    </div>
 		</div>
 		<div class="demo-pi">
 			<div class="img-mobile"><img src="img/iphone6_home.png" alt="power influencer mobile"></div>
 			<div class="nexus-mobile"><img src="img/nexus_home.png" alt="power influencer mobile"></div>
 		</div>
 	</section>
-	<section class="plataforma">
+	<section class="plataforma" id="sect-plataforma">
 		<div class="inside-plataforma">
 			<div class="info-plataforma left-info">
 				<ul>
@@ -395,7 +403,23 @@
 			</div>
 		</div>
 	</section>
-	<section class="cli-section">
+	<section class="cli-section" id="clientes-section">
+		<div class="video-bg">
+			<div class="video-container">
+		        <div class="homepage-hero-module">
+				    <div class="video-container">
+				        <div class="filter"></div>
+				        <video autoplay loop class="fillWidth">
+				            <source src="video/Working-Space.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+				            <source src="video/Working-Space.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+				        </video>
+				        <div class="poster hidden">
+				            <img src="Working-Space.jpg" alt="">
+				        </div>
+				    </div>
+				</div>
+    		</div>
+		</div>
 		<div class="inside-section">
 			<div class="clientes-info">
 				<div class="title-section">Donec vitae clientes</div>
@@ -405,13 +429,15 @@
 			<div class="logotipe-sect">
 				<ul>
 					<li id="nike-logo">
-						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							 width="150px" height="100px" viewBox="0 0 150 100" enable-background="new 0 0 150 100" xml:space="preserve">
-						<path fill="#FFFFFF" d="M35.027,35.227c-7.307,8.581-14.314,19.223-14.385,27.178c-0.027,2.993,0.928,5.606,3.22,7.586
-							c3.299,2.848,6.932,3.854,10.549,3.859c5.285,0.007,10.533-2.125,14.641-3.769c6.92-2.767,83.412-35.985,83.412-35.985
-							c0.738-0.37,0.6-0.831-0.323-0.6c-0.373,0.093-83.274,22.56-83.274,22.56c-1.6,0.449-3.235,0.682-4.825,0.69
-							c-6.372,0.038-12.041-3.499-11.994-10.951C32.065,42.88,32.958,39.364,35.027,35.227L35.027,35.227z"/>
-						</svg>
+						<div class="icon-pi">
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 width="150px" height="100px" viewBox="0 0 150 100" enable-background="new 0 0 150 100" xml:space="preserve">
+							<path fill="#FFFFFF" d="M35.027,35.227c-7.307,8.581-14.314,19.223-14.385,27.178c-0.027,2.993,0.928,5.606,3.22,7.586
+								c3.299,2.848,6.932,3.854,10.549,3.859c5.285,0.007,10.533-2.125,14.641-3.769c6.92-2.767,83.412-35.985,83.412-35.985
+								c0.738-0.37,0.6-0.831-0.323-0.6c-0.373,0.093-83.274,22.56-83.274,22.56c-1.6,0.449-3.235,0.682-4.825,0.69
+								c-6.372,0.038-12.041-3.499-11.994-10.951C32.065,42.88,32.958,39.364,35.027,35.227L35.027,35.227z"/>
+							</svg>
+						</div>
 					</li>
 					<li id="mazda-logo">
 						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -1258,15 +1284,21 @@
 			<div class="title-section">Donec vitae clientes</div>
 			<div class="title-line"></div>
 			<p>Quisque pellentesque nisi dui, et consectetur lorem facilisis eget. Nulla facilisi. Nunc nec turpis non dolor blandit pulvinar at a sem.  Quisque lacinia semper congue.</p>
-			<button class="btn-green">ingresar</button>
+			<div class="button raised hoverable">
+		    	<a href="#"><div class="anim"></div>ingresar</a>
+		    </div>
 		</div>
 	</section>
-	<section class="influencers-section">
-		<div class="inside-section">
-			<div class="title-section">Influencers</div>
-			<div class="title-line"></div>
-			<p>Fusce tempus orci ut elit laoreet egestas. Maecenas maximus, ipsum at bibendum laoreet, felis arcu fermentum elit, id tempus massa leo ac neque. Duis dignissim dapibus bibendum.</p>
-			<button class="btn-white">ingresar</button>
+	<section class="influencers-section" id="influencer-section">
+		<div class="particles-infl"> 
+			<div class="inside-section">
+				<div class="title-section">Influencers</div>
+				<div class="title-line"></div>
+				<p>Fusce tempus orci ut elit laoreet egestas. Maecenas maximus, ipsum at bibendum laoreet, felis arcu fermentum elit, id tempus massa leo ac neque. Duis dignissim dapibus bibendum.</p>
+				<div class="button btn-white hoverable">
+			    	<a href="#"><div class="anim white-anim"></div>Influencers</a>
+			    </div>
+			</div>	
 		</div>
 	</section>
 	<section class="contacto-section">
@@ -1281,7 +1313,7 @@
 					<input type="text" name="firstname" placeholder="Nombre">
 					<input type="text" name="title" placeholder="Asunto">
 					<textarea type="text" name="mesaje" placeholder="Mensaje" rows="7" cols="30"></textarea>
-					<input class="btn-green" type="submit" value="Submit">
+					<button class="button raised hoverable" type="submit"><div class="anim"></div><a href="#">ENVIAR</a></button>
 				</form>
 			</div>
 		</div>
@@ -1293,7 +1325,7 @@
 			<div class="form-newsletter">
 				<input type="text" name="nombre" placeholder="Nombre">
 				<input type="text" name="correo" placeholder="Correo">
-				<input class="btn-green-full" type="submit" value="Suscribir">
+				<button class="button btn-green-full hoverable" type="submit"><div class="anim anim-full"></div><a href="#">SUSCRIBIR</a></button>
 			</div>
 		</div>
 		<div class="social-connect">

@@ -2,22 +2,40 @@
 	@include span-columns(12);
 	background: {position:center;size:cover;repeat:no-repeat;image:url('../img/bg-influencers.jpg');}
 	@extend .text-center;
-	.inside-section {
-		@extend .text-center;
-		@include outer-container(40%);
-		.title-section {
-			@include span-columns(12);
+	.particles-infl {
+		@include span-columns(12);
+		height: 100%;
+		background: rgba(4,4,4,0.6);
+		z-index: 1;
+		.inside-section {
+			z-index: 2;
+			position: relative;
 			@extend .text-center;
-		}
-		p {
-			@include span-columns(12);
-		}
-		button {
-			@include span-columns(5);
-			clear: both;
-			float: none;
-			margin: 0 auto !important;
-			font:{weight:bold;}
-		}
+			@include outer-container(40%);
+			margin:{top:250px;bottom:300px;}
+			.title-section {
+				@include span-columns(12);
+				@extend .text-center;
+				margin:{bottom:15px;}
+			}
+			.title-line {
+				float: none;
+				display: block;
+				margin: {left:auto;right:auto;}
+			}
+			p {
+				@include span-columns(12);
+			}
+			.button {
+				@include span-columns(5);
+				clear: both;
+				float: none;
+				margin: 0 auto !important;
+			}
+		}	
+	}
+	canvas {
+		position: absolute !important;
+		background: rgba(44, 50, 124, 0.2) !important;
 	}
 }	

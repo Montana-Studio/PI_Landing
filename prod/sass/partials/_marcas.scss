@@ -12,7 +12,7 @@
 			color:$first_color;
 			line-height: 2em;
 		}
-		button {
+		.button {
 			@include span-columns(3);
 			clear: both;
 			background: none;

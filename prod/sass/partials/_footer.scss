@@ -24,15 +24,17 @@
 				padding: 10px;
 				font:{family:$primary_font;size:em(13);weight:300;}
 				color:$third_color;
-				&.btn-green-full {
-					background: $green_color;
-					border:0;
+			}
+			.button {
+				@include span-columns(4);
+				background: $green_color;
+				border:0;
+				font:{weight:bold;}
+				a {
 					color:#fff;
-					text:{transform:uppercase;}
-					font:{weight:bold;}
 				}
 			}
-		}
+		} 
 	}
 	.social-connect {
 		@include outer-container(40%);
@@ -47,7 +49,6 @@
 					@include span-columns(12);
 					display: table;
 					.icon-social {
-						@include span-columns(2);
 						display: table-cell;
 						vertical-align: middle;
 					}

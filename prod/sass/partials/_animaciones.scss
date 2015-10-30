@@ -1,20 +1,139 @@
 .iphone6-animations {
-	  @include animation(iphone6 1.2s linear 1500ms forwards);
-	  @include animation-delay(2s);
-	  @include transform-style(preserve-3d);
-	  @include perspective(300px);
-	  @include perspective-origin(100% 100%);
+	  @include animation(iphone6 1.6s linear 1500ms forwards);
+	  @include animation-delay(2.5s);
 }
 @include keyframes(iphone6) {
 	0% {
 		opacity: 0;
-		@include transform(translateX(-500px)rotateY(0deg));
+		@include transform(translateX(-500px));
 	}
-	50% {
-		opacity: 0.2; 
+	15% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.3;
+	   	@include transform(translateX(8px));
+	}
+	70% {
+		@include transform(translateX(2px));
 	}
 	100% {
 		opacity: 1;
 		@include transform(translateX(0)rotateY(0deg));
+	}
+}
+.nexus-animations {
+	@include animation(nexus-animations 1.6s linear 2500ms forwards);
+	@include animation-delay(3s);
+}
+@include keyframes(nexus-animations) {
+	0% {
+		opacity: 0;
+		@include transform(translateX(500px));
+	}
+	15% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.3;
+	   	@include transform(translateX(-8px));
+	}
+	70% {
+		@include transform(translateX(-2px));
+	}
+	100% {
+		opacity: 1;
+		@include transform(translateX(0)rotateY(0deg));
+	}
+}
+.title-home-animtns {
+	@include animation(title-home-animtns .4s ease-out forwards);
+	@include animation-delay(1s);
+}
+@include keyframes(title-home-animtns) {	
+	0% {
+		opacity: 0;
+		@include transform(translateY(-100px));
+	}
+	100% {
+		opacity: 1;
+		@include transform(translateY(0px));
+	}
+}
+.subtitle-home-animtns {
+	@include animation(subtitle-home-animtns .4s ease-out forwards);
+	@include animation-delay(1.4s);
+}
+@include keyframes(subtitle-home-animtns) {	  
+	0% {
+		opacity: 0;
+		@include transform(translateY(-100px));
+	}
+	20% {
+		opacity: 0; 
+	}
+	100% {
+		opacity: 1;
+		@include transform(translateY(0px));
+	}
+}
+.home-btnone {
+	@include animation(home-btnone .4s ease-out forwards);
+	@include animation-delay(1.8s);
+}
+@include keyframes(home-btnone) {	  
+	0% {
+		opacity: 0;
+		@include transform(translateY(-80px));
+	}
+	20% {
+		opacity: 0; 
+	}
+	100% {
+		opacity: 1;
+		@include transform(translateY(0px));
+	}
+}
+.home-btntwo {
+	@include animation(home-btnone .4s ease-out forwards);
+	@include animation-delay(2s);
+}
+
+@include keyframes(anim-in) {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+@include keyframes(anim-in-pseudo) {
+  0% { background: rgba(#000,0.25); }
+  100% { background: rgba(#000,0); }
+}
+
+@include keyframes(anim-out) {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+@include keyframes(anim-out-pseudo) {
+  0% { background:rgba(#02b794,0.25);  }
+  100% { background: rgba(#02b794,0); }
+}
+@include keyframes(anim-out-pseudo2) {
+  0% { background:rgba($first_color,0.25);  }
+  100% { background: rgba($first_color,0); }
+}
+@include keyframes(anim-out-pseudo-full) {
+  0% { background:rgba(#14826c,0.25);  }
+  100% { background: rgba(#14826c,0); }
+}
+.icon-rotate {
+	@include animation(icon-rotate .4s ease-out forwards);
+}
+@include keyframes(icon-rotate) {
+	0% {
+		@include transform(rotateX(0));
+	}
+	100% {
+		@include transform(rotateY(360deg));
 	}
 }
