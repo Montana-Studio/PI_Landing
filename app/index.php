@@ -33,19 +33,21 @@
 				</div>	
 			</div>
 		</div>
-		<div class="content-slidr">
-			<h1>Donec vitae tristique</h1>
-			<h2>Explore and share stories from friends and the world around you.</h2>
-			 <div class="button raised hoverable home-btnone">
-		    	<a class="animation-pi" href="#clientes-section"><div class="anim"></div>Cliente</a>
-		    </div>
-		    <div class="button raised hoverable home-btntwo">
-		    	<a class="animation-pi" href="#influencer-section"><div class="anim"></div>Influencers</a>
-		    </div>
-		</div>
-		<div class="demo-pi">
-			<div class="img-mobile"><img src="img/iphone6_home.png" alt="power influencer mobile"></div>
-			<div class="nexus-mobile"><img src="img/nexus_home.png" alt="power influencer mobile"></div>
+		<div class="content-home-inside">
+			<div class="content-slidr">
+				<h1>Donec vitae tristique</h1>
+				<h2>Explore and share stories from friends and the world around you.</h2>
+				 <div class="button raised hoverable home-btnone">
+			    	<a class="animation-pi" href="#clientes-section"><div class="anim"></div>Cliente</a>
+			    </div>
+			    <div class="button raised hoverable home-btntwo">
+			    	<a class="animation-pi" href="#influencer-section"><div class="anim"></div>Influencers</a>
+			    </div>
+			</div>
+			<div class="demo-pi">
+				<div class="img-mobile"><img src="img/iphone6_home2.png" alt="power influencer mobile"></div>
+				<div class="nexus-mobile"><img src="img/nexus_home.png" alt="power influencer mobile"></div>
+			</div>	
 		</div>
 	</section>
 	<section class="plataforma" id="sect-plataforma">
@@ -414,7 +416,6 @@
 				            <source src="video/Working-Space.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
 				        </video>
 				        <div class="poster hidden">
-				            <img src="Working-Space.jpg" alt="">
 				        </div>
 				    </div>
 				</div>
@@ -1281,12 +1282,17 @@
 	</section>
 	<section class="marcas-section">
 		<div class="inside-section">
-			<div class="title-section">Donec vitae clientes</div>
-			<div class="title-line"></div>
-			<p>Quisque pellentesque nisi dui, et consectetur lorem facilisis eget. Nulla facilisi. Nunc nec turpis non dolor blandit pulvinar at a sem.  Quisque lacinia semper congue.</p>
-			<div class="button raised hoverable">
-		    	<a href="#"><div class="anim"></div>ingresar</a>
-		    </div>
+			<div class="text-marcas">
+				<div class="title-section">Donec vitae clientes</div>
+				<div class="title-line"></div>
+				<p>Quisque pellentesque nisi dui, et consectetur lorem facilisis eget. Nulla facilisi. Nunc nec turpis non dolor blandit pulvinar at a sem.  Quisque lacinia semper congue.</p>
+				<div class="button raised hoverable">
+			    	<a href="#"><div class="anim"></div>ingresar</a>
+			    </div>	
+			</div>
+			<div class="video-descript" id="video-descr">
+				<img src="img/iphone6_pers.png" alt="power influencers platform">
+			</div>
 		</div>
 	</section>
 	<section class="influencers-section" id="influencer-section">

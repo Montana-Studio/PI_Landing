@@ -125,6 +125,10 @@ input {
 	text:{transform:uppercase;}
 	@include span-columns(5);
 	line-height: 1.2em;
+	@include media($tabletLandTonotebook) {
+		font:{size:em(65);}
+		line-height:1em;
+	}
 }
 .title-line {
 	@include span-columns(1);
@@ -137,6 +141,13 @@ input {
 .inside-section{  
 	@include outer-container(65%);
 	margin:{top:150px;bottom:200px;}
+	@include media($tabletLandTonotebook) {
+		@include outer-container(85%);
+		margin:{top:180px;bottom:180px;}
+	}
+	@include media($tablet) {
+		@include outer-container(95%);
+	}
 	p {
 		@include span-columns(5);
 		font:{family:$primary_font;size:em(18);weight:300;}

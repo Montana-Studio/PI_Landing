@@ -9,3 +9,21 @@ $third_color:#9e9e9e;
 $green_color:#02b794; /* green from gradient */
 $color_blue:#2c327c;  //Blue from gradient
 
+@mixin bgSize($size){
+	@include prefixer(background-size,$size,moz);
+}
+//RESPONSIVE WIDTH
+$mobile:(max-width em(320));
+$mobileLand:(min-width em(480) max-width em(690));
+$tablet:(min-width em(768) max-width em(1023));
+$tabletLand:(min-width em(1024) max-width em(1279));
+$notebook:(min-width em(1280));
+$notebookLand:(min-width em(1281) max-width em(1439));
+$desktop:(min-width em(1440));
+
+$mobileTomobileLand: (min-width em(320) max-width em(640));
+$mobileLandTotablet: (min-width em(480) max-width em(1024));
+$tabletLandTonotebook: (min-width em(1024) max-width em(1440));
+$notebookTodesktop: (min-width em(1280) min-width em(1440));
+
+

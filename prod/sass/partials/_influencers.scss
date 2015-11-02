@@ -13,6 +13,14 @@
 			@extend .text-center;
 			@include outer-container(40%);
 			margin:{top:250px;bottom:300px;}
+			@include media($tabletLandTonotebook) {
+				margin:{top:300px;bottom:300px;}
+				@include outer-container(60%);
+			}
+			@include media($tablet) {
+				margin:{top:250px;bottom:250px;}
+				@include outer-container(90%);
+			}
 			.title-section {
 				@include span-columns(12);
 				@extend .text-center;

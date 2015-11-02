@@ -1,22 +1,44 @@
 .marcas-section {
 	@include span-columns(12);
 	.inside-section{  
-		.title-section {
-			color:$first_color;
+		margin:{top:200px;bottom:200px;}
+		@include media($tablet){
+			margin:{top:100px;bottom:50px;}
 		}
-		.title-line {
-			background: $green_color;
-			//@include background-image(linear-gradient(left, $green_color 0%, #4a7fcd 100%));
+		.text-marcas {
+			@include span-columns(5);
+			@include media($tablet) {
+				@include span-columns(10);
+			}
+			.title-section {
+				@include span-columns(12);
+				color:$first_color;
+			}
+			.title-line {
+				background: $green_color;
+				//@include background-image(linear-gradient(left, $green_color 0%, #4a7fcd 100%));
+			}
+			p {
+				@include span-columns(12);
+				color:$first_color;
+				line-height: 2em;
+			}
+			.button {
+				@include span-columns(8);
+				clear: both;
+				background: none;
+				margin:{top:20px;}
+			}	
 		}
-		p {
-			color:$first_color;
-			line-height: 2em;
-		}
-		.button {
-			@include span-columns(3);
-			clear: both;
-			background: none;
-			margin:{top:20px;}
+		.video-descript {
+			@include span-columns(7);
+			@include media($tablet) {
+				@include span-columns(12);
+			}
+			img {
+				@extend .Floatingx;
+				float: right;
+			}
 		}
 	}
 }

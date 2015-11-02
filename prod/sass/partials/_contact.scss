@@ -1,8 +1,14 @@
 .contacto-section {
 	@include span-columns(12);
 	.inside-section{  
+		@include media($tablet) {
+			margin:{top:100px;bottom:100px;}
+		}
 		.text-contact {
 			@include span-columns(6);
+			@include media($tablet) {
+				@include span-columns(10);
+			}
 			.title-section {
 				color:$first_color;
 				@include span-columns(10);
@@ -19,6 +25,9 @@
 		
 		.form-contact {
 			@include span-columns(6);
+			@include media($tablet) {
+				@include span-columns(10);
+			}
 			form {
 				@include outer-container(90%);
 				input {

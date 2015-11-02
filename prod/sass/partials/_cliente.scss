@@ -2,8 +2,14 @@
 	@include span-columns(12);
 	background: {position:center;size:cover;repeat:no-repeat;image:url('../img/bg-cli-2.jpg');}
 	.inside-section{  
+		@include media($tablet) {
+			margin:{top: 95px;bottom: 65px;}
+		}
 		.clientes-info {
 			@include span-columns(5);
+			@include media($tablet) {
+				@include span-columns(10);
+			}
 			.title-section {
 				@include span-columns(12);
 			}
@@ -19,11 +25,19 @@
 		.logotipe-sect {
 			@include span-columns(6.5);
 			float: right;
+			@include media($tablet) {
+				@include span-columns(12);
+			}
 			ul {
 				@include pad(0);
+				@include span-columns(12);
 				li {
 					list-style: none;
 					display: inline-block;
+					@include media($tabletLandTonotebook) {
+						@include span-columns(4);
+						margin: 0;
+					}
 				}
 			}
 		}

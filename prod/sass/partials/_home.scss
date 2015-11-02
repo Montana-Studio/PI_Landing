@@ -7,7 +7,16 @@
 	//@include background-image(linear-gradient(top, $color_blue 0%, $green_color 100%));
 	//@include background-image(linear-gradient(hsla(0, 100%, 100%, 0.25) 0%, hsla(0, 100%, 100%, 0.08) 50%), linear-gradient(#fcfcfc, darken(#e1e1e1, 10%))); 
 	background: {position: center;size:cover;image:url('../img/header-bg.jpg');}
-	padding:{bottom:120px;} 
+	padding:{bottom:200px;} 
+	@include media($desktop) {
+		padding:{bottom:185px;}
+	}
+	@include media($tabletLandTonotebook) {
+		padding:{bottom:140px;}
+	}
+	@include media($mobileLandTotablet) {
+    	padding:{bottom:110px;}
+    }
 	.menu-pi {
 		@include span-columns(12);
 		padding: 5px 0;
@@ -16,6 +25,12 @@
 		.menu-center {
 			@include outer-container(65%);
 			text:{align:right;}	
+			@include media($tabletLandTonotebook) {
+		       @include outer-container(85%);
+		    }
+		    @include media($mobileLandTotablet) {
+		       @include outer-container(95%);
+		    }
 			.logo {
 				@include span-columns(3);
 				@include row();
@@ -41,6 +56,7 @@
 							color:$second_color;
 						}
 						a {
+							margin:{left:30px;}
 							color:$first_color;
 							&:hover {
 								color:$second_color;
@@ -51,7 +67,8 @@
 							a {
 								font:{family:$primary_font;size:em(13);}
 								color:$green_color;
-								padding: 4px 0;
+								padding: 4px 10px;
+								margin:0 auto;
 							}
 						}
 					}
@@ -59,52 +76,117 @@
 			}
 		}
 	}
-	.content-slidr {
-		margin:{top:250px;}
-		@include span-columns(4);
-		@include shift(2);
-		h1 {
-			@extend .title-home-animtns;
-			opacity: 0;
-			font:{family:$primary_font;size:em(60);weight:300;}
-			color:$green_color;	
-			@extend .no-margins;
+	.content-home-inside {
+		@include outer-container(65%);
+		@include media($tabletLandTonotebook) {
+			@include outer-container(85%);
+			margin:{top: 150px;}
 		}
-		h2 {
-			@extend .subtitle-home-animtns;
-			opacity: 0;
-			font:{family:$primary_font;size:em(25);weight:300;}
-			color:$first_color;
-			letter-spacing: 1px;
-			margin:{top:0; bottom:20px;}
-			line-height: 1.6em;
-		}
-		.button {
+		@include media($mobileLandTotablet) {
+	       @include outer-container(95%);
+	    }
+		.content-slidr {
+			margin:{top:250px;}
 			@include span-columns(6);
-			opacity: 0;
+			@include media($tabletLandTonotebook) {
+		    	margin:{left:0;right:0;}
+		    	margin:{top:150px;}
+		    }
+		    @include media($mobileLandTotablet) {
+		    	margin:{top:150px;}
+		    }
+			h1 {
+				@extend .title-home-animtns;
+				opacity: 0;
+				font:{family:$primary_font;size:em(60);weight:300;}
+				color:$green_color;	
+				@extend .no-margins;
+				@include media($tabletLandTonotebook) {
+					font:{size:em(55)}
+					line-height:em(24);
+				}
+				@include media($mobileLandTotablet) {
+			    	font:{size:3em;}
+					line-height:1.1em;
+			    }
+			}
+			h2 {
+				@extend .subtitle-home-animtns;
+				opacity: 0;
+				font:{family:$primary_font;size:em(25);weight:300;}
+				color:$first_color;
+				letter-spacing: 1px;
+				margin:{top:0; bottom:20px;}
+				line-height: 1.6em;
+				@include media($mobileLandTotablet) {
+			    	margin:{top:10px; bottom:10px;}
+			    	font:{size:1.3em}
+			    }
+			}
+			.button {
+				@include span-columns(6);
+				opacity: 0;
+			}
 		}
-	}
-	.demo-pi {
-		margin:{top:150px;}
-		@include span-columns(6);
-		display: table;
-		.img-mobile {
-			opacity: 0;
-			@extend .iphone6-animations;
-			@include span-columns(5);
-			margin:0;
+		.demo-pi {
+			margin:{top:150px;}
+			@include span-columns(6);
 			@extend .text-right;
-			display:table-cell;
-			vertical-align: bottom;
-			float: none;
-		}
-		.nexus-mobile {
-			opacity: 0;
-			@extend .nexus-animations;
-			@include span-columns(5);
-			display:table-cell;
-			vertical-align: bottom;
-
-		}
+			display: block;
+			@include media($tabletLandTonotebook) {
+		    	margin:{top:50px;}
+		      	@include span-columns(6);
+		      	float: right;
+		    }
+		    @include media($mobileLandTotablet) {
+		    	margin:{top: 95px;}
+		    }
+			.img-mobile {
+				opacity: 0;
+				@extend .iphone6-animations;
+				@include span-columns(5);
+				margin:0;
+				@extend .text-right;
+				float: none;
+				text-align: right;
+   				display: inline-block !important;
+				@include media($tabletLandTonotebook) {
+					@include span-columns(5);
+					float: none;
+					margin:{right:0;}
+				}
+				@include media($mobileLandTotablet) {
+			    	@include span-columns(6);
+			    	margin:{right:0;}
+			    	float: none;
+			    }
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+			.nexus-mobile {
+				opacity: 0;
+				@extend .nexus-animations;
+				@extend .text-right;
+				vertical-align: bottom;
+				text-align: right;
+    			display: inline-block !important;
+    			float: none;
+    			width: 35%;
+				@include media($tabletLandTonotebook) {
+					@include span-columns(4.3);
+					float: none;
+				}
+				@include media($mobileLandTotablet) {
+			    	@include span-columns(5);
+			    	float: none;
+			    }
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}	
 	}
 }
