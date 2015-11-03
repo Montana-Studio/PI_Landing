@@ -30,6 +30,7 @@
 					<li><a class="animation-pi" href="#sect-plataforma">Plataforma</a></li>
 					<li><a class="animation-pi" href="#clientes-section">Cliente</a></li>
 					<li><a class="animation-pi" href="#influencer-section">Influencers</a></li>
+					<li><a class="animation-pi" href="#contact-section">Contacto</a></li>
 					<li>
 						<div class="button raised hoverable ingresar-btn-menu">
 					    	<a href="#"><div class="anim"></div>Ingresar</a>
@@ -38,7 +39,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="menu-pi">
+		<div class="menu-pi" id="menu-pi-home">
 			<div class="menu-center">
 				<div class="logo"></div>
 				<div class="menu-list">
@@ -51,7 +52,7 @@
 							<div class="button raised hoverable ingresar-btn-menu">
 						    	<a href="#"><div class="anim"></div>Ingresar</a>
 						    </div>
-						</li>
+						</li>  
 					</ul>
 				</div>	
 			</div>
@@ -1330,7 +1331,7 @@
 			</div>	
 		</div>
 	</section>
-	<section class="contacto-section">
+	<section class="contacto-section" id="contact-section">
 		<div class="inside-section">
 			<div class="text-contact">
 				<div class="title-section">Contacto</div>

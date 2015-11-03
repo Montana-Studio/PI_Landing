@@ -631,6 +631,34 @@ html {
   -moz-animation-delay: 1.1s;
   animation-delay: 1.1s; }
 
+.aparece6, .content-home-pi .menu-mobile .mobile-menulist ul.list-style-menu li:nth-child(6) {
+  -webkit-animation: aparece 0.5s ease-in-out forwards;
+  -moz-animation: aparece 0.5s ease-in-out forwards;
+  animation: aparece 0.5s ease-in-out forwards;
+  -webkit-animation-delay: 1.3s;
+  -moz-animation-delay: 1.3s;
+  animation-delay: 1.3s; }
+
+.animated-bg-menu, .content-home-pi .menu-pi.bg-menu-mobile {
+  -webkit-animation: animated-bg-menu 0.5s ease-in-out forwards;
+  -moz-animation: animated-bg-menu 0.5s ease-in-out forwards;
+  animation: animated-bg-menu 0.5s ease-in-out forwards; }
+
+@-webkit-keyframes animated-bg-menu {
+  0% {
+    background: none; }
+  100% {
+    background-color: #fff; } }
+@-moz-keyframes animated-bg-menu {
+  0% {
+    background: none; }
+  100% {
+    background-color: #fff; } }
+@keyframes animated-bg-menu {
+  0% {
+    background: none; }
+  100% {
+    background-color: #fff; } }
 .content-home-pi {
   float: left;
   display: block;
@@ -1031,7 +1059,7 @@ html {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%;
+      width: 40.29137%;
       display: block; }
       .content-home-pi .content-home-inside .demo-pi:last-child {
         margin-right: 0; }
@@ -1041,7 +1069,7 @@ html {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 48.82117%;
+          width: 40.29137%;
           float: right; }
           .content-home-pi .content-home-inside .demo-pi:last-child {
             margin-right: 0; } }
@@ -1053,7 +1081,7 @@ html {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 82.94039%;
+          width: 74.41059%;
           margin-top: 20px; }
           .content-home-pi .content-home-inside .demo-pi:last-child {
             margin-right: 0; } }
@@ -1575,7 +1603,7 @@ input {
           display: block;
           margin-right: 2.35765%;
           width: 100%;
-          margin-top: 10px;
+          margin-top: 35px;
           margin-bottom: 5px; }
           .marcas-section .inside-section .video-descript:last-child {
             margin-right: 0; } }

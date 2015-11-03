@@ -71,14 +71,10 @@ $( document ).ready(function() {
 	 });
 
 	$('a.animation-pi').on('click',function(e){
-        //prevenir en comportamiento predeterminado del enlace
         e.preventDefault();
-        //obtenemos el id del elemento en el que debemos posicionarnos
         var strAncla=$(this).attr('href');
          
-        //utilizamos body y html, ya que dependiendo del navegador uno u otro no funciona
         $('body,html').stop(true,true).animate({
-            //realizamos la animacion hacia el ancla
             scrollTop: $(strAncla).offset().top
         },1000);
     });
@@ -95,34 +91,70 @@ $( document ).ready(function() {
 		color:'#02b794'
 	});
 
+
 	var $elementAnima = $('#video-descr');//elemento para animar
+	var $elementAnima2 = $('#menu-pi-home');//elemento para animar
 	var $animation_elements = $elementAnima;
+	var $animation_elements2 = $elementAnima2;
 	var $window = $(window);
+	var window_top_position = $window.scrollTop();
 
 	function check_if_in_view(){
-		var window_top_position = $window.scrollTop();
 
-		$.each($animation_elements, function(){
 
-			if(window_top_position > 2600){//ScrollTop PX
-				$animation_elements.removeClass('bottomelements').addClass('topelements');
-			}
-			if(window_top_position < 2400){//ScrollTop PX
-				$animation_elements.removeClass('topelements').addClass('bottomelements');
-			}
+		if(document.documentElement.clientWidth >= 1024){
 
-		});
+			var window_top_position = $window.scrollTop();
+
+			$.each($animation_elements, function(){
+
+				if(window_top_position > 2600){//ScrollTop PX
+					$animation_elements.removeClass('bottomelements').addClass('topelements');
+				}
+				if(window_top_position < 2400){//ScrollTop PX
+					$animation_elements.removeClass('topelements').addClass('bottomelements');
+				}
+
+			});
+		}	
+
+		if(document.documentElement.clientWidth < 1024&&document.documentElement.clientWidth > 600){
+
+			var window_top_position1 = $window.scrollTop();
+
+			$.each($animation_elements, function(){
+
+				if(window_top_position1 > 2400){//ScrollTop PX
+					$animation_elements.removeClass('bottomelements').addClass('topelements');
+				}
+				if(window_top_position1 < 2400){//ScrollTop PX
+					$animation_elements.removeClass('topelements').addClass('bottomelements');
+				}
+
+			});
+		}
+
+		if(document.documentElement.clientWidth <= 600){
+
+			var window_top_position2 = $window.scrollTop();
+
+			$.each($animation_elements2, function(){
+
+				if(window_top_position2 > 100){//ScrollTop PX
+					$animation_elements2.addClass('bg-menu-mobile');
+				}
+				if(window_top_position2 < 100){//ScrollTop PX
+					$animation_elements2.removeClass('bg-menu-mobile');
+				}
+
+			});
+		}
 
 	}
 
 	$window.on('scroll resize', check_if_in_view);
 	$window.trigger('scroll');
 
-	if(document.documentElement.clientWidth >= 1024){
-		
-	}else {
-		
-	}
 
 });
 
