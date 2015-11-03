@@ -63,6 +63,10 @@ input {
     	font:{family:$primary_font;size:em(15);}
     	color:$green_color;
     	padding: 12px 20px;
+    	@include media($mobileTomobileLand) {
+			font-size: 12px;
+			padding: 10px 20px;
+		}
     }
 }
 .anim {
@@ -129,6 +133,9 @@ input {
 		font:{size:em(65);}
 		line-height:1em;
 	}
+	@include media($mobileTomobileLand) {
+		font:{size:em(45);}
+	}
 }
 .title-line {
 	@include span-columns(1);
@@ -148,12 +155,20 @@ input {
 	@include media($tablet) {
 		@include outer-container(95%);
 	}
+	@include media($mobileTomobileLand) {
+		@include outer-container(96%);
+	}
 	p {
 		@include span-columns(5);
 		font:{family:$primary_font;size:em(18);weight:300;}
 		color:#fff;
 		clear: both;
 		line-height: 2em;
+		@include media($mobileTomobileLand) {
+			font:{size:em(16);}
+    		line-height: 1.7em;
+    		margin: 5px 0;
+		}
 	}
 }
 .icon-plat {

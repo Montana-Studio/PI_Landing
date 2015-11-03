@@ -5,10 +5,16 @@
 		@include media($tablet) {
 			margin:{top: 95px;bottom: 65px;}
 		}
+		@include media($mobileTomobileLand) {
+			margin:{top: 70px;bottom: 30px;}
+		}
 		.clientes-info {
 			@include span-columns(5);
 			@include media($tablet) {
 				@include span-columns(10);
+			}
+			@include media($mobileTomobileLand) {
+				@include span-columns(12);
 			}
 			.title-section {
 				@include span-columns(12);
@@ -28,6 +34,9 @@
 			@include media($tablet) {
 				@include span-columns(12);
 			}
+			@include media($mobileTomobileLand) {
+				@include span-columns(12);
+			}
 			ul {
 				@include pad(0);
 				@include span-columns(12);
@@ -37,6 +46,9 @@
 					@include media($tabletLandTonotebook) {
 						@include span-columns(4);
 						margin: 0;
+					}
+					@include media($mobileTomobileLand) {
+						@include span-columns(5.5);
 					}
 				}
 			}

@@ -4,10 +4,16 @@
 		@include media($tablet) {
 			margin:{top:100px;bottom:100px;}
 		}
+		@include media($mobileTomobileLand) {
+			margin:{top:70px;bottom:45px;}
+		}
 		.text-contact {
 			@include span-columns(6);
 			@include media($tablet) {
 				@include span-columns(10);
+			}
+			@include media($mobileTomobileLand) {
+				@include span-columns(12);
 			}
 			.title-section {
 				color:$first_color;
@@ -27,9 +33,19 @@
 			@include span-columns(6);
 			@include media($tablet) {
 				@include span-columns(10);
+				margin:0 auto;
+			}
+			@include media($mobileTomobileLand) {
+				@include span-columns(12);
 			}
 			form {
 				@include outer-container(90%);
+				@include media($tablet) {
+					@include span-columns(12);
+				}
+				@include media($mobileTomobileLand) {
+					@include outer-container(98%);
+				}
 				input {
 					@include span-columns(12);
 					border:0;

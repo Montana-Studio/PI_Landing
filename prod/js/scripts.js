@@ -62,6 +62,14 @@ function initBannerVideoSize(element){
 
 $( document ).ready(function() {
 
+	 $('.icon-mobile-menu').on('click', function(e) {
+		$('.mobile-menulist').toggleClass('show'); 
+		$('.menu-mobile').toggleClass('show'); 
+		$('.icon-mobile-menu').toggleClass('icon-color'); 
+		$('.mobile-menulist ul').toggleClass('list-style-menu'); 
+		e.preventDefault();
+	 });
+
 	$('a.animation-pi').on('click',function(e){
         //prevenir en comportamiento predeterminado del enlace
         e.preventDefault();
@@ -74,6 +82,13 @@ $( document ).ready(function() {
             scrollTop: $(strAncla).offset().top
         },1000);
     });
+
+	$('a.animation-pi').on('click',function(e){
+		$('.mobile-menulist').removeClass('show'); 
+		$('.menu-mobile').removeClass('show'); 
+		$('.icon-mobile-menu').removeClass('icon-color'); 
+		$('.mobile-menulist ul').removeClass('list-style-menu'); 
+	});	
 
 	$('#influencer-section').jParticle({
 		background:'#2c327c',

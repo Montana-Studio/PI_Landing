@@ -11,14 +11,37 @@
 		@include media($tabletLandTonotebook) {
 			@include outer-container(90%);
 		}
+		@include media($tablet) {
+			@include outer-container(95%);
+			@include pad(0);
+		}
+		@include media($mobileTomobileLand) {
+			@include outer-container(95%);
+			@include pad(0);
+			margin:{top:10px;bottom:30px;}
+		}
 		.title-newsl {
 			@include span-columns(3);
 			color:$green_color;
 			font:{family:$primary_font;size:em(20);weight:300;}
 			text:{transform:capitalize;}
+			@include media($tablet) {
+				@include span-columns(12);
+				margin:15px 0;
+			}
+			@include media($mobileTomobileLand) {
+				@include span-columns(12);
+				margin:10px 0;
+			}
 		}
 		.form-newsletter {
 			@include span-columns(9);
+			@include media($tablet) {
+				@include span-columns(12);
+			}
+			@include media($mobileTomobileLand) {
+				@include span-columns(12);
+			}
 			input {
 				@include span-columns(4);
 				background: none;
@@ -27,12 +50,20 @@
 				padding: 10px;
 				font:{family:$primary_font;size:em(13);weight:300;}
 				color:$third_color;
+				@include media($mobileTomobileLand) {
+					@include span-columns(12);
+					margin:5px 0;
+				}
 			}
 			.button {
 				@include span-columns(4);
 				background: $green_color;
 				border:0;
 				font:{weight:bold;}
+				@include media($mobileTomobileLand) {
+					@include span-columns(12);
+					margin:{top:5px;}
+				}
 				a {
 					color:#fff;
 				}
@@ -45,8 +76,18 @@
 		@include media($tabletLandTonotebook) {
 			@include outer-container(50%);
 		}
+		@include media($tablet) {
+			@include outer-container(70%);
+		}
+		@include media($mobileTomobileLand) {
+			@include outer-container(96%);
+		}
 		ul {
 			@include span-columns(12);
+			@include media($mobileTomobileLand) {
+				margin:0 !important;
+				@include pad(0);
+			}
 			li {
 				@include span-columns(4);
 				display: inline-block;
@@ -54,9 +95,16 @@
 				a {
 					@include span-columns(12);
 					display: table;
+					@include media($mobileTomobileLand) {
+						text:{align:center;}
+					}
 					.icon-social {
 						display: table-cell;
 						vertical-align: middle;
+						@include media($mobileTomobileLand) {
+							@include span-columns(12);
+							float: none;
+						}
 					}
 					.link-social {
 						@include span-columns(10);
@@ -66,6 +114,10 @@
 						display: table-cell;
 						vertical-align: middle;
 						padding:{left:4px;}
+						@include media($mobileTomobileLand) {
+							@include span-columns(12);
+							float: none;
+						}
 					}
 				}
 			}
