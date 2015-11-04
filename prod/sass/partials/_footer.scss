@@ -11,6 +11,9 @@
 		@include media($tabletLandTonotebook) {
 			@include outer-container(90%);
 		}
+		@include media($mobileLandTotablet) {
+			@include outer-container(95%);
+		}
 		@include media($tablet) {
 			@include outer-container(95%);
 			@include pad(0);
@@ -29,6 +32,10 @@
 				@include span-columns(12);
 				margin:15px 0;
 			}
+			@include media($mobileLand) {
+				@include span-columns(12);
+				margin:10px 0;
+			}
 			@include media($mobileTomobileLand) {
 				@include span-columns(12);
 				margin:10px 0;
@@ -37,6 +44,9 @@
 		.form-newsletter {
 			@include span-columns(9);
 			@include media($tablet) {
+				@include span-columns(12);
+			}
+			@include media($mobileLand) {
 				@include span-columns(12);
 			}
 			@include media($mobileTomobileLand) {
@@ -79,6 +89,12 @@
 		@include media($tablet) {
 			@include outer-container(70%);
 		}
+		@include media($mobileLandTotablet) {
+			@include outer-container(90%);
+		}
+		@include media($mobileLand) {
+			@include outer-container(96%);
+		}
 		@include media($mobileTomobileLand) {
 			@include outer-container(96%);
 		}
@@ -95,6 +111,7 @@
 				a {
 					@include span-columns(12);
 					display: table;
+					-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 					@include media($mobileTomobileLand) {
 						text:{align:center;}
 					}
@@ -117,6 +134,7 @@
 						@include media($mobileTomobileLand) {
 							@include span-columns(12);
 							float: none;
+							font:{size:em(10);}
 						}
 					}
 				}

@@ -129,12 +129,19 @@ input {
 	text:{transform:uppercase;}
 	@include span-columns(5);
 	line-height: 1.2em;
+	
 	@include media($tabletLandTonotebook) {
 		font:{size:em(65);}
 		line-height:1em;
 	}
+	@include media($mobileLandTotablet) {
+		font:{size:em(45)}
+	}
+	@include media($mobileLand) {
+		font:{size:em(45)}
+	}
 	@include media($mobileTomobileLand) {
-		font:{size:em(45);}
+		font:{size:em(38);}
 	}
 }
 .title-line {
@@ -152,12 +159,18 @@ input {
 		@include outer-container(85%);
 		margin:{top:180px;bottom:180px;}
 	}
+	@include media($mobileLandTotablet) {
+		@include outer-container(95%);
+	}
 	@include media($tablet) {
 		@include outer-container(95%);
 	}
+	@include media($mobileLand) {
+		@include outer-container(95%); 
+	}
 	@include media($mobileTomobileLand) {
 		@include outer-container(96%);
-	}
+	} 
 	p {
 		@include span-columns(5);
 		font:{family:$primary_font;size:em(18);weight:300;}
@@ -180,4 +193,10 @@ input {
 	&:hover {
 		@extend .icon-rotate;
 	}
+}
+.active-option {
+	opacity: 1 !important;
+}
+#title-mobile-op1 {
+	display: block;
 }

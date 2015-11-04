@@ -9,6 +9,9 @@
 		background: rgba(4,4,4,0.6);
 		z-index: 1;
 		margin:{right:0 !important;}
+		@include media($mobileTomobileLand) {
+			background: none !important;
+		}
 		.inside-section {
 			z-index: 2;
 			position: relative;
@@ -22,6 +25,13 @@
 			@include media($tablet) {
 				margin:{top:250px;bottom:250px;}
 				@include outer-container(90%);
+			}
+			@include media($mobileLandTotablet) {
+				@include outer-container(95%);
+			}
+			@include media($mobileLand) {
+				margin:{top:200px;bottom:190px;}
+				@include outer-container(95%);
 			}
 			@include media($mobileTomobileLand) {
 				margin:{top:200px;bottom:190px;}
@@ -56,5 +66,8 @@
 	canvas {
 		position: absolute !important;
 		background: rgba(44, 50, 124, 0.2) !important;
+		@include media($mobileTomobileLand) {
+			display: none !important;
+		}
 	}
 }	

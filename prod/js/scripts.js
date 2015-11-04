@@ -58,7 +58,6 @@ function initBannerVideoSize(element){
 
 }*/
 
- 
 
 $( document ).ready(function() {
 
@@ -91,6 +90,50 @@ $( document ).ready(function() {
 		color:'#02b794'
 	});
 
+	$('#plat-op1').on('click',function(e){
+        $('#plat-op1 .icon-plat').addClass('active-option');
+        $('#plat-op2 .icon-plat').removeClass('active-option');
+		$('#plat-op3 .icon-plat').removeClass('active-option');
+        $('#plat-op4 .icon-plat').removeClass('active-option');
+        $('#title-mobile-op1').show();
+        $('#title-mobile-op2').hide();
+        $('#title-mobile-op3').hide();
+        $('#title-mobile-op4').hide();
+      
+    });
+	$('#plat-op2').on('click',function(e){
+        $('#plat-op1 .icon-plat').removeClass('active-option');
+        $('#plat-op2 .icon-plat').addClass('active-option');
+		$('#plat-op3 .icon-plat').removeClass('active-option');
+        $('#plat-op4 .icon-plat').removeClass('active-option');
+		$('#title-mobile-op1').hide();
+        $('#title-mobile-op2').show();
+        $('#title-mobile-op3').hide();
+        $('#title-mobile-op4').hide();
+      
+    });
+	$('#plat-op3').on('click',function(e){
+        $('#plat-op1 .icon-plat').removeClass('active-option');
+        $('#plat-op2 .icon-plat').removeClass('active-option');
+		$('#plat-op3 .icon-plat').addClass('active-option');
+        $('#plat-op4 .icon-plat').removeClass('active-option');
+		$('#title-mobile-op1').hide();
+        $('#title-mobile-op2').hide();
+        $('#title-mobile-op3').show();
+        $('#title-mobile-op4').hide();
+      
+    });
+	$('#plat-op4').on('click',function(e){
+        $('#plat-op1 .icon-plat').removeClass('active-option');
+        $('#plat-op2 .icon-plat').removeClass('active-option');
+		$('#plat-op3 .icon-plat').removeClass('active-option');
+        $('#plat-op4 .icon-plat').addClass('active-option');
+		$('#title-mobile-op1').hide();
+        $('#title-mobile-op2').hide();
+        $('#title-mobile-op3').hide();
+        $('#title-mobile-op4').show();
+    });
+
 
 	var $elementAnima = $('#video-descr');//elemento para animar
 	var $elementAnima2 = $('#menu-pi-home');//elemento para animar
@@ -118,7 +161,7 @@ $( document ).ready(function() {
 			});
 		}	
 
-		if(document.documentElement.clientWidth < 1024&&document.documentElement.clientWidth > 600){
+		if(document.documentElement.clientWidth < 1024&&document.documentElement.clientWidth > 800){
 
 			var window_top_position1 = $window.scrollTop();
 
@@ -134,7 +177,7 @@ $( document ).ready(function() {
 			});
 		}
 
-		if(document.documentElement.clientWidth <= 600){
+		if(document.documentElement.clientWidth <= 799){
 
 			var window_top_position2 = $window.scrollTop();
 

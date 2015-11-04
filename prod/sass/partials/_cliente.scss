@@ -40,6 +40,9 @@
 			ul {
 				@include pad(0);
 				@include span-columns(12);
+				@include media($mobileTomobileLand) {
+					text:{align:center;}
+				}
 				li {
 					list-style: none;
 					display: inline-block;
@@ -48,7 +51,8 @@
 						margin: 0;
 					}
 					@include media($mobileTomobileLand) {
-						@include span-columns(5.5);
+						@include span-columns(6);
+						margin:0 !important;
 					}
 				}
 			}

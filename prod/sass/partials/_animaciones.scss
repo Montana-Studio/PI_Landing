@@ -132,9 +132,13 @@
 @include keyframes(icon-rotate) {
 	0% {
 		@include transform(rotateX(0));
+		-webkit-transform: rotateY(0); 
+		
 	}
 	100% {
 		@include transform(rotateY(360deg));
+		-webkit-transform: rotateY(360deg); 
+		
 	}
 }
 .topelements {
@@ -223,6 +227,10 @@
 .aparece6 {
 	@include animation(aparece 0.5s ease-in-out forwards);
 	@include animation-delay(1.3s);
+}
+.aparece7 {
+	@include animation(aparece 0.5s ease-in-out forwards);
+	@include animation-delay(1.5s);
 }
 .animated-bg-menu {
 	@include animation(animated-bg-menu 0.5s ease-in-out forwards);
