@@ -4,14 +4,23 @@
 	margin:0;
 	@include pad(0);
 	position: relative;
-	//@include background-image(linear-gradient(top, $color_blue 0%, $green_color 100%));
-	//@include background-image(linear-gradient(hsla(0, 100%, 100%, 0.25) 0%, hsla(0, 100%, 100%, 0.08) 50%), linear-gradient(#fcfcfc, darken(#e1e1e1, 10%))); 
 	background: {position: center;size:cover;image:url('../img/header-bg.jpg');}
 	padding:{bottom:200px;} 
 	overflow: hidden;
-	@include media($desktop) {
+
+	@include media($height-desktop) {
+		height: 1000px;
 	}
-	@include media($tabletLandTonotebook) {
+	@include media($height-tablet) {
+		height: 1280px;
+	}
+	@include media($height-tabletLand) {
+		height: 780px;
+	}
+	@include media($height-mobileLand) {
+		height: 640px;
+	}
+	/*@include media($tabletLandTonotebook) {
 		padding:{bottom:140px;}
 	}
 	@include media($mobileLandTotablet) {
@@ -19,7 +28,8 @@
     }
     @include media($mobileTomobileLand) {
     	padding:{bottom:40px;}
-    }
+    }*/
+
 	.menu-pi {
 		@include span-columns(12);
 		padding: 5px 0;
@@ -68,12 +78,15 @@
 			.menu-list {
 				@include span-columns(9);
 				float: right;
-				@include media($mobileTomobileLand) {
-					display: none;
+				@include media($mobileLandTotablet) {
+					display: block;
 				}
 				@include media($mobileLand) {
-					display: none;
+					display: block;
 				}
+				@include media($mobileTomobileLand) {
+					display: none;
+				}	
 				&.show {
 					@include span-columns(12);
 					display: block;
@@ -149,11 +162,11 @@
 		@include media($mobileLandTotablet) {
 			display: none;
 		}
-		@include media($tablet) {
+		@include media($mobileLand) {
 			display: none;
 		}
-		@include media($mobileLand) {
-			@include span-columns(0.9);
+		@include media($mobileTomobileLand) {
+			display: block;
 		}
 		svg {
 			width: 100%;
@@ -180,13 +193,13 @@
 			display: block;
 			@extend .open-menu;
 		}
-		@include media($mobileLandTotablet) {
+		@include media($notebookTodesktop) {
 			display: none;
 		}
 		@include media($tabletLandTonotebook) {
 			display: none;
 		}
-		@include media($notebookTodesktop) {
+		@include media($mobileLandTotablet) {
 			display: none;
 		}
 		.logo-mobile-white {
@@ -288,12 +301,21 @@
 		.content-slidr {
 			margin:{top:250px;}
 			@include span-columns(6);
+
 			@include media($tabletLandTonotebook) {
 		    	margin:{left:0;right:0;}
 		    	margin:{top:150px;}
 		    }
 		    @include media($mobileLandTotablet) {
+		    	margin:{top:85px;}
+		    }
+		    @include media($tabletLand) {
 		    	margin:{top:150px;}
+		    } 
+		    @include media($tablet) {
+		    	margin: 130px auto 0;
+		    	float: none;
+		    	text-align: center;
 		    }
 		    @include media($mobileTomobileLand) {
 		    	@include span-columns(10);
@@ -332,6 +354,9 @@
 			    	margin:{top:10px; bottom:10px;}
 			    	font:{size:1.3em}
 			    }
+			    @include media($tablet) {
+					margin:{bottom:40px;}
+				}
 			    @include media($mobileTomobileLand) {
 			    	font:{size:em(15);}
 			    	line-height: 1.2em;
@@ -354,13 +379,29 @@
 			@include span-columns(5);
 			@extend .text-right;
 			display: block;
+			@include media($desktop) {
+				@include span-columns(6.5);
+		      	float: right;
+			}
 			@include media($tabletLandTonotebook) {
 		    	margin:{top:50px;}
 		      	@include span-columns(5);
 		      	float: right;
 		    }
+		    @include media($notebookTodesktop) {
+		      	@include span-columns(6);
+		      	float: right;
+		    }
 		    @include media($mobileLandTotablet) {
 		    	margin:{top: 95px;}
+		    }
+		    @include media($tabletLand) {
+		    	margin:{top: 60px;}
+		    }
+		    @include media($tablet) {
+		    	@include span-columns(7);
+   				float: none;
+   				margin:{top:40px;left:auto !important;bottom:0;right:auto !important;}
 		    }
 		    @include media($mobileLand) {
 		    	@include span-columns(5);

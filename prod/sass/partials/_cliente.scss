@@ -16,6 +16,12 @@
 			@include media($mobileTomobileLand) {
 				@include span-columns(12);
 			}
+		    @include media($mobileLand) {
+				@include span-columns(12);
+			}
+			@include media($mobileTomobileLand) {
+				@include span-columns(12);
+			}
 			.title-section {
 				@include span-columns(12);
 			}
@@ -32,6 +38,12 @@
 			@include span-columns(6.5);
 			float: right;
 			@include media($tablet) {
+				@include span-columns(12);
+			}
+			@include media($mobileTomobileLand) {
+				@include span-columns(12);
+			}
+		    @include media($mobileLand) {
 				@include span-columns(12);
 			}
 			@include media($mobileTomobileLand) {

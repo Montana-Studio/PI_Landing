@@ -7,7 +7,10 @@
 	@include media($mobileLandTotablet) {
     	padding:20px 0;
     }
-    @include media($tablet) {
+     @include media($tabletLandTonotebook) { 
+    	padding:60px 0;
+    }
+    @include media($tablet) { 
     	padding:20px 0;
     }
     @include media($mobileTomobileLand) {
@@ -24,11 +27,18 @@
     	}
     	.plat-icon-mobile {
     		@include span-columns(12);
-			@include media($tabletLandTonotebook) {
+			display: none;
+			@include media($mobileLandTotablet) {
 				display: none;
 			}
-			@include media($notebookTodesktop) {
+			@include media($tablet) {
+				display: block;
+			}
+			@include media($mobileLand) {
 				display: none;
+			}
+			@include media($mobileTomobileLand) {
+				display: block;
 			}
 			ul {
 				@include span-columns(7);
@@ -126,11 +136,18 @@
 	   			padding: 40px;
 	   			float: none;
 	   			@include media($mobileLandTotablet) {
-			    	display: none !important;
-			    }
-			    @include media($mobileTomobileLand) {
-		    		display: none !important;
-		    	}
+					display: none !important;
+				}
+				@include media ($tabletLandTonotebook) {
+	   				display: table-cell !important;
+	   			}
+				@include media($mobileLand) {
+					display: table-cell !important;
+					padding: 10px 5px;
+				}
+				@include media($mobileTomobileLand) {
+					display: none !important;
+				}
 				&.left-info {
 					@extend .text-right;
 					float: none;
@@ -164,6 +181,7 @@
 							@include span-columns(12);
 							display: table;
 							float: none;
+							opacity: 0.4;
 							.icon-plat {
 								@include span-columns(2);
 								@include media($tabletLandTonotebook) {
@@ -192,18 +210,27 @@
 								.title-plat {
 									font:{size:em(18);}
 									text:{transform:uppercase;weight:400;}
-									@include media($mobileLandTotablet) {
-								    	font:{size:1em;}
-								    }
-								    @include media($tablet) {
-								    	font:{size:em(12);}
-								    }
+								    @include media($mobileLandTotablet) {
+										font:{size:1em;}
+									}
+									@include media($mobileLand) {
+										font:{size:em(13);}
+									}
+									@include media($mobileTomobileLand) {
+										display: none !important;
+									}
 								}
 								.subt-plat {
 									font:{size:em(14);weight:300;}
-									@include media($tablet) {
-								    	font:{size:em(12);}
-								    }
+								    @include media($mobileLandTotablet) {
+										font:{size:em(12);}
+									}
+									@include media($mobileLand) {
+										font:{size:em(11);}
+									}
+									@include media($mobileTomobileLand) {
+										display: none !important;
+									}
 								}
 							}
 						}
@@ -224,20 +251,42 @@
 					float: none;
 	    			display: inline-block;
 				}
-				@include media($mobileTomobileLand) {
-		    		@include span-columns(7);
-		    		margin:0 auto;
+		    	@include media($mobileLandTotablet) {
+					@include span-columns(2);
 					float: none;
-		    	}
+					margin:0;
+				}
+				@include media($tabletLandTonotebook) {
+					@include span-columns(3);
+					float: none;
+					margin:0;
+				}
+				@include media($mobileLand) {
+					@include span-columns(2.2);
+					float: none;
+					margin:0;
+					padding: 0;
+				}
+				@include media($mobileTomobileLand) {
+					@include span-columns(5);
+					margin:0 auto;
+					float: none;
+				}
 				img {
 					width: 100%;
 					height: auto;
 					@include media($mobileLandTotablet) {
 			    		width: 50%;
 				    }
-				    @include media($mobileTomobileLand) {
-			    		width: 50%;
-			    	}
+				   @include media($tabletLandTonotebook) {
+				   		width: 100%;
+				   }
+				    @include media($mobileLand) {
+						width: 90%;
+					}
+					@include media($mobileTomobileLand) {
+						width: 60%;
+					}
 				}
 			}
 		}

@@ -159,14 +159,15 @@ input {
 		@include outer-container(85%);
 		margin:{top:180px;bottom:180px;}
 	}
-	@include media($mobileLandTotablet) {
+	@include media($tablet) {
 		@include outer-container(95%);
 	}
-	@include media($tablet) {
+	@include media($mobileLandTotablet) {
 		@include outer-container(95%);
 	}
 	@include media($mobileLand) {
 		@include outer-container(95%); 
+		margin:{top:95px;bottom:100px;}
 	}
 	@include media($mobileTomobileLand) {
 		@include outer-container(96%);

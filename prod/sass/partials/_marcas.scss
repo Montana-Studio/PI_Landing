@@ -5,6 +5,9 @@
 		@include media($tablet){
 			margin:{top:100px;bottom:50px;}
 		}
+		@include media($mobileLand) {
+			margin:{top:95px;bottom:100px;}
+		}
 		@include media($mobileTomobileLand) {
 			margin:{top:70px;bottom:55px;}
 		}
@@ -12,6 +15,12 @@
 			@include span-columns(5);
 			@include media($tablet) {
 				@include span-columns(10);
+			}
+			@include media($mobileTomobileLand) {
+				@include span-columns(12);
+			}
+		    @include media($mobileLand) {
+				@include span-columns(12);
 			}
 			@include media($mobileTomobileLand) {
 				@include span-columns(12);
@@ -37,6 +46,10 @@
 				@include media($mobileLandTotablet) {
 					display: none;
 				}
+				@include media($tabletLandTonotebook) {
+					display: block;
+				}
+
 				@include media($mobileLand) {
 					display: none;
 				}
@@ -52,13 +65,32 @@
 				float: right;
 				margin:0;
 			}
-			@include media($tablet) {
+			@include media($mobileLandTotablet) {
 				@include span-columns(12);
+			}
+			@include media($tablet) {
+				@include span-columns(10);
+				float: none;
+				margin:0 auto;
+			}
+			@include media($tabletLand) {
+				@include span-columns(8);
+				float: none;
+				margin:0 auto;
+			}
+			@include media($tabletLandTonotebook) {
+				@include span-columns(6);
+			}
+		    @include media($mobileLand) {
+				@include span-columns(8);
+				float: none;
+				margin:0 auto;
 			}
 			@include media($mobileTomobileLand) {
 				@include span-columns(12);
 				margin:{top:0;bottom:14px;}
 			}
+
 			img {
 				@extend .Floatingx;
 				float: right;
@@ -75,13 +107,16 @@
 			@include media($notebookTodesktop) {
 				display: none;
 			}
+
 			@include media($tabletLandTonotebook) {
 				display: none;
 			}
-			@include media($tablet) {
+			@include media($mobileLandTotablet) {
+				display: block;
+			}
+			@include media($tabletLand) {
 				display: none;
 			}
-
 		}
 	}
 }

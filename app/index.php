@@ -253,14 +253,14 @@
 				<div class="title-icon-select"  id="title-mobile-op4" >
 					<div class="title-plat">Edición de campañas</div>
 					<div class="subt-plat">Aliquam nec odio et quam posuere</div>
-				</div>
+				</div> 
 			</div>
 			<div class="content-platform">
 			
 				<div class="info-plataforma left-info">
 					<ul>
 						<li>
-							<div class="caract-plat">
+							<div class="caract-plat active-option" id="plat2-op1">
 								<div class="text-plat">
 									<div class="title-plat">Perfil de usuario</div>
 									<div class="subt-plat">Aliquam nec odio et quam posuere</div>
@@ -305,7 +305,7 @@
 							</div>
 						</li>
 						<li>
-							<div class="caract-plat">
+							<div class="caract-plat" id="plat2-op2">
 								<div class="text-plat">
 									<div class="title-plat">configuracion de perfil</div>
 									<div class="subt-plat">Aliquam nec odio et quam posuere</div>
@@ -364,7 +364,7 @@
 				<div class="info-plataforma right-info">
 					<ul>
 						<li>
-							<div class="caract-plat">
+							<div class="caract-plat" id="plat2-op3">
 								
 								<div class="icon-plat">
 									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -404,7 +404,7 @@
 							</div>
 						</li>
 						<li>
-							<div class="caract-plat">
+							<div class="caract-plat" id="plat2-op4">
 								<div class="icon-plat">
 									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 width="60px" height="60px" viewBox="-5 -5 60 60" enable-background="new -5 -5 60 60" xml:space="preserve">
