@@ -21,7 +21,7 @@
 				<path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2
 					s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2
 					S29.104,22,28,22z"/>
-				</svg>	
+				</svg>
 		</div>
 		<div class="menu-mobile">
 			<a href="#content-home" class="logo-mobile-white animation-pi"></a>
@@ -54,14 +54,14 @@
 							<div class="button raised hoverable ingresar-btn-menu">
 						    	<a href="#"><div class="anim"></div>Ingresar</a>
 						    </div>
-						</li>  
+						</li>
 					</ul>
-				</div>	
+				</div>
 			</div>
 		</div>
 		<div class="content-home-inside">
 			<div class="content-slidr">
-				<h1>Donec vitae tristique</h1>
+				<h1>Bienvenidos a Power Influencer</h1>
 				<h2>Explore and share stories from friends and the world around you.</h2>
 				 <div class="button raised hoverable home-btnone">
 			    	<a class="animation-pi" href="#clientes-section"><div class="anim"></div>Cliente</a>
@@ -73,16 +73,16 @@
 			<div class="demo-pi">
 				<div class="img-mobile"><img src="img/iphone6_home2.png" alt="power influencer mobile"></div>
 				<div class="nexus-mobile"><img src="img/nexus_home.png" alt="power influencer mobile"></div>
-			</div>	
+			</div>
 		</div>
 	</section>
 	<section class="plataforma" id="sect-plataforma">
-		
+
 		<div class="inside-plataforma">
-			
+
 			<div class="platform-title">
 				<div class="title-section">Plataforma</div>
-				<div class="title-line"></div>	
+				<div class="title-line"></div>
 			</div>
 			<div class="plat-icon-mobile">
 				<ul>
@@ -129,7 +129,7 @@
 							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 								 width="60px" height="60px" viewBox="-5 -5 60 60" enable-background="new -5 -5 60 60" xml:space="preserve">
 							<g opacity="0.8" enable-background="new    ">
-								
+
 									<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="423.6495" y1="-483.8486" x2="489.2744" y2="-483.8486" gradientTransform="matrix(-0.3899 -0.7181 -0.6979 0.379 -134.4831 535.7349)">
 									<stop  offset="0.0105" style="stop-color:#1DB89A"/>
 									<stop  offset="0.9969" style="stop-color:#1D5BC2"/>
@@ -176,7 +176,7 @@
 							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 								 width="60px" height="60px" viewBox="-5 -5 60 60" enable-background="new -5 -5 60 60" xml:space="preserve">
 							<g opacity="0.8" enable-background="new    ">
-								
+
 									<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="423.6495" y1="-483.8486" x2="489.2744" y2="-483.8486" gradientTransform="matrix(-0.3899 -0.7181 -0.6979 0.379 -134.4831 535.7349)">
 									<stop  offset="0.0105" style="stop-color:#1DB89A"/>
 									<stop  offset="0.9969" style="stop-color:#1D5BC2"/>
@@ -209,7 +209,7 @@
 							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 								 width="60px" height="60px" viewBox="-5 -5 60 60" enable-background="new -5 -5 60 60" xml:space="preserve">
 							<g opacity="0.8" enable-background="new    ">
-								
+
 									<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="423.6495" y1="-483.8486" x2="489.2744" y2="-483.8486" gradientTransform="matrix(-0.3899 -0.7181 -0.6979 0.379 -134.4831 535.7349)">
 									<stop  offset="0.0105" style="stop-color:#1DB89A"/>
 									<stop  offset="0.9969" style="stop-color:#1D5BC2"/>
@@ -253,10 +253,10 @@
 				<div class="title-icon-select"  id="title-mobile-op4" >
 					<div class="title-plat">Edición de campañas</div>
 					<div class="subt-plat">Aliquam nec odio et quam posuere</div>
-				</div> 
+				</div>
 			</div>
 			<div class="content-platform">
-			
+
 				<div class="info-plataforma left-info">
 					<ul>
 						<li>
@@ -269,7 +269,7 @@
 									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 											 width="60px" height="60px" viewBox="-5 -5 60 60" enable-background="new -5 -5 60 60" xml:space="preserve">
 										<g opacity="0.8" enable-background="new    ">
-											
+
 												<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="423.6495" y1="-483.8486" x2="489.2744" y2="-483.8486" gradientTransform="matrix(-0.3899 -0.7181 -0.6979 0.379 -134.4831 535.7349)">
 												<stop  offset="0.0105" style="stop-color:#1DB89A"/>
 												<stop  offset="0.9969" style="stop-color:#1D5BC2"/>
@@ -314,7 +314,7 @@
 									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 width="60px" height="60px" viewBox="-5 -5 60 60" enable-background="new -5 -5 60 60" xml:space="preserve">
 									<g opacity="0.8" enable-background="new    ">
-										
+
 											<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="423.6495" y1="-483.8486" x2="489.2744" y2="-483.8486" gradientTransform="matrix(-0.3899 -0.7181 -0.6979 0.379 -134.4831 535.7349)">
 											<stop  offset="0.0105" style="stop-color:#1DB89A"/>
 											<stop  offset="0.9969" style="stop-color:#1D5BC2"/>
@@ -365,12 +365,12 @@
 					<ul>
 						<li>
 							<div class="caract-plat" id="plat2-op3">
-								
+
 								<div class="icon-plat">
 									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 width="60px" height="60px" viewBox="-5 -5 60 60" enable-background="new -5 -5 60 60" xml:space="preserve">
 									<g opacity="0.8" enable-background="new    ">
-										
+
 											<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="423.6495" y1="-483.8486" x2="489.2744" y2="-483.8486" gradientTransform="matrix(-0.3899 -0.7181 -0.6979 0.379 -134.4831 535.7349)">
 											<stop  offset="0.0105" style="stop-color:#1DB89A"/>
 											<stop  offset="0.9969" style="stop-color:#1D5BC2"/>
@@ -409,7 +409,7 @@
 									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 width="60px" height="60px" viewBox="-5 -5 60 60" enable-background="new -5 -5 60 60" xml:space="preserve">
 									<g opacity="0.8" enable-background="new    ">
-										
+
 											<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="423.6495" y1="-483.8486" x2="489.2744" y2="-483.8486" gradientTransform="matrix(-0.3899 -0.7181 -0.6979 0.379 -134.4831 535.7349)">
 											<stop  offset="0.0105" style="stop-color:#1DB89A"/>
 											<stop  offset="0.9969" style="stop-color:#1D5BC2"/>
@@ -445,7 +445,7 @@
 					</ul>
 				</div>
 
-			</div>	
+			</div>
 		</div>
 	</section>
 	<section class="cli-section" id="clientes-section">
@@ -468,7 +468,7 @@
 			<div class="clientes-info">
 				<div class="title-section">Donec vitae marcas</div>
 				<div class="title-line"></div>
-				<p>Quisque pellentesque nisi dui, et consectetur lorem facilisis eget. Nulla facilisi. Nunc nec turpis non dolor blandit pulvinar at a sem.  Quisque lacinia semper congue.</p>	
+				<p>Quisque pellentesque nisi dui, et consectetur lorem facilisis eget. Nulla facilisi. Nunc nec turpis non dolor blandit pulvinar at a sem.  Quisque lacinia semper congue.</p>
 			</div>
 			<div class="logotipe-sect">
 				<ul>
@@ -637,9 +637,9 @@
 						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="150px" height="100px" viewBox="0 0 150 100" enable-background="new 0 0 150 100" xml:space="preserve">
 						<g>
-							<polygon fill="#FFFFFF" points="33.134,66.735 33.134,72.31 26.947,72.31 26.947,66.735 23.538,66.735 23.538,81.364 
+							<polygon fill="#FFFFFF" points="33.134,66.735 33.134,72.31 26.947,72.31 26.947,66.735 23.538,66.735 23.538,81.364
 								26.947,81.364 26.947,75.483 33.134,75.483 33.134,81.364 36.542,81.364 36.542,66.735 36.369,66.735 	"/>
-							<polygon fill="#FFFFFF" points="49.04,66.735 45.475,72.528 41.912,66.735 37.887,66.735 43.774,76.299 43.774,81.364 
+							<polygon fill="#FFFFFF" points="49.04,66.735 45.475,72.528 41.912,66.735 37.887,66.735 43.774,76.299 43.774,81.364
 								47.179,81.364 47.179,76.299 53.064,66.735 52.752,66.735 	"/>
 							<path fill="#FFFFFF" d="M64.029,66.735V77.46c0,0.407-0.299,0.737-0.725,0.737h-5.463V66.735h-3.407v14.629h10.071
 								c0.898,0,1.618-0.271,2.143-0.803c0.522-0.536,0.787-1.273,0.787-2.185V66.735h-0.172H64.029z"/>
@@ -777,7 +777,7 @@
 						<g id="layer1" transform="translate(-182.578,-514.8209)">
 							<g id="g2422" transform="matrix(2.1423054,0,0,2.1423054,184.3056,517.08031)">
 								<polygon id="polygon2384" fill="#FFFFFF" points="34.539,21.403 32.173,16.28 29.116,16.28 31.562,21.403 		"/>
-								<polygon id="polygon2386" fill="#FFFFFF" points="23.434,21.403 24.339,19.021 25.333,21.403 28.193,21.403 25.919,16.28 
+								<polygon id="polygon2386" fill="#FFFFFF" points="23.434,21.403 24.339,19.021 25.333,21.403 28.193,21.403 25.919,16.28
 									22.67,16.28 20.604,21.403 		"/>
 								<rect id="rect2388" x="13.953" y="16.28" fill="#FFFFFF" width="2.805" height="5.123"/>
 								<rect id="rect2390" x="5.73" y="16.28" fill="#FFFFFF" width="2.804" height="5.123"/>
@@ -785,7 +785,7 @@
 									c0.957,0,1.932,0.282,3.562,1.008v-2.196c-1.418-0.61-2.554-0.872-3.808-0.872c-2.61,0-4.292,1.285-4.292,3.233
 									c0,0.875,0.267,1.525,0.687,2.033H60.051L60.051,21.403z"/>
 								<polygon id="polygon2394" fill="#FFFFFF" points="38.649,21.403 40.984,16.28 37.965,16.28 35.713,21.403 		"/>
-								<polygon id="polygon2396" fill="#FFFFFF" points="44.931,21.403 45.838,19.021 46.831,21.403 49.689,21.403 47.415,16.28 
+								<polygon id="polygon2396" fill="#FFFFFF" points="44.931,21.403 45.838,19.021 46.831,21.403 49.689,21.403 47.415,16.28
 									44.165,16.28 42.096,21.403 		"/>
 								<polygon id="polygon2398" fill="#FFFFFF" points="41.552,22.76 39.625,27.54 42.596,27.54 44.417,22.76 		"/>
 								<polygon id="polygon2400" fill="#FFFFFF" points="47.395,22.76 49.392,27.54 52.414,27.54 50.292,22.76 		"/>
@@ -869,7 +869,7 @@
 						<path fill="#FFFFFF" d="M128.859,68.003c0-0.419-0.279-0.554-0.752-0.554h-0.685v1.833h0.392v-0.77h0.185l0.423,0.77h0.464
 							l-0.468-0.802C128.661,68.462,128.859,68.341,128.859,68.003z M128.161,68.201h-0.347V67.76h0.275c0.149,0,0.351,0.014,0.351,0.203
 							C128.441,68.165,128.337,68.201,128.161,68.201z"/>
-						</svg>					
+						</svg>
 					</li>
 					<li id="adidas">
 						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -892,7 +892,7 @@
 								c0.127,0.014,0.211,0.028,0.267,0.042c0.084,0.028,0.141,0.07,0.183,0.141c0.042,0.056,0.056,0.127,0.056,0.211
 								c0,0.113-0.042,0.211-0.127,0.281c-0.07,0.071-0.197,0.099-0.38,0.113c-0.028,0-0.085,0-0.127,0h-0.521V59.396z"/>
 							<polygon fill="#FFFFFF" points="53.722,59.692 57.521,59.692 53.722,53.36 50.513,48.026 36.878,56.216 38.961,59.692 	"/>
-							<polygon fill="#FFFFFF" points="89.069,59.692 96.077,59.692 107.629,59.692 96.077,40.442 83.3,19.194 78.037,22.36 
+							<polygon fill="#FFFFFF" points="89.069,59.692 96.077,59.692 107.629,59.692 96.077,40.442 83.3,19.194 78.037,22.36
 								69.679,27.384 78.037,41.3 	"/>
 							<path fill="#FFFFFF" d="M82.582,66.038c-1.309-0.844-2.842-1.337-4.503-1.337c-0.014,0-0.028,0-0.042,0
 								c-4.587,0.028-8.316,3.771-8.316,8.358c0,4.587,3.729,8.33,8.316,8.358c0.014,0,0.028,0,0.042,0c1.66,0,3.194-0.492,4.503-1.337
@@ -925,7 +925,7 @@
 								v0.872h3.842V73.06V59.692h-3.842V66.038z M58.281,73.932c-0.408,2.111-2.279,3.729-4.517,3.729c-0.014,0-0.028,0-0.042,0
 								c-2.519-0.028-4.559-2.082-4.559-4.601c0-2.519,2.04-4.573,4.559-4.587c0.014,0,0.028,0,0.042,0c2.237,0,4.109,1.604,4.517,3.715
 								V73.932z"/>
-							<polygon fill="#FFFFFF" points="82.568,59.692 78.037,52.121 66.906,33.603 53.722,41.54 53.271,41.807 53.722,42.553 
+							<polygon fill="#FFFFFF" points="82.568,59.692 78.037,52.121 66.906,33.603 53.722,41.54 53.271,41.807 53.722,42.553
 								64.022,59.692 78.037,59.692 	"/>
 						</g>
 						</svg>
@@ -990,7 +990,7 @@
 								c0,0-0.038-0.475,0.133-0.627c-3.498,0-6.749,0-6.749,0s0.342,0.133,0.495,0.779c0.152,0.647,4.791,20.913,4.791,20.913
 								s0.171,0.494-0.076,0.685h7.167C45.292,80.855,45.121,80.665,45.217,80.152z"/>
 						</g>
-						</svg>	
+						</svg>
 					</li>
 					<li id="canada">
 						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -1293,7 +1293,7 @@
 								c-0.558,0.375-1.151,0.881-1.799,1.546c-1.168,1.186-2.177,2.547-3.013,4.036c-0.197,0-2.32,0-3.08,0
 								C95.476,71.609,97.044,70.155,98.388,69.298z"/>
 						</g>
-						</svg>						
+						</svg>
 					</li>
 					<li id="carat">
 						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -1331,18 +1331,18 @@
 				<p>Quisque pellentesque nisi dui, et consectetur lorem facilisis eget. Nulla facilisi. Nunc nec turpis non dolor blandit pulvinar at a sem.  Quisque lacinia semper congue.</p>
 				<div class="button raised hoverable">
 			    	<a href="#"><div class="anim"></div>ingresar</a>
-			    </div>	
+			    </div>
 			</div>
 			<div class="video-descript" id="video-descr">
 				<img src="img/iphone6_pers.png" alt="power influencers platform">
 			</div>
 			<div class="buton-mombile-ingresar button raised hoverable">
 		    	<a href="#"><div class="anim"></div>ingresar</a>
-		    </div>	
+		    </div>
 		</div>
 	</section>
 	<section class="influencers-section" id="influencer-section">
-		<div class="particles-infl"> 
+		<div class="particles-infl">
 			<div class="inside-section">
 				<div class="title-section">Influencers</div>
 				<div class="title-line"></div>
@@ -1350,14 +1350,14 @@
 				<div class="button btn-white hoverable">
 			    	<a href="#"><div class="anim white-anim"></div>Influencers</a>
 			    </div>
-			</div>	
+			</div>
 		</div>
 	</section>
 	<section class="contacto-section" id="contact-section">
 		<div class="inside-section">
 			<div class="text-contact">
 				<div class="title-section">Contacto</div>
-				<div class="title-line"></div> 
+				<div class="title-line"></div>
 				<p>Fusce tempus orci ut elit laoreet egestas. Maecenas maximus, ipsum at bibendum laoreet, felis arcu fermentum elit, id tempus massa leo ac neque. Duis dignissim dapibus bibendum.</p>
 			</div>
 			<div class="form-contact">
@@ -1438,7 +1438,7 @@
 									c0-0.948,0.334-1.755,1.003-2.424c0.668-0.668,1.476-1.003,2.424-1.003c0.99,0,1.824,0.36,2.503,1.082
 									c0.77-0.149,1.496-0.425,2.175-0.828c-0.261,0.813-0.764,1.443-1.507,1.888C31.888,19.695,32.546,19.518,33.205,19.235z"/>
 							</g>
-							</svg>	
+							</svg>
 						</div>
 						<div class="link-social">/Powerinfluencers</div>
 					</a>
@@ -1476,9 +1476,9 @@
 									c0.191,0,0.352-0.065,0.482-0.197C31.248,22.081,31.313,21.92,31.313,21.73z"/>
 							</g>
 							</svg>
-						</div>	
+						</div>
 						<div class="link-social">/Powerinfluencers</div>
-						
+
 					</a>
 				</li>
 			</ul>
@@ -1486,4 +1486,4 @@
 	</footer>
 
 </body>
-</html> 
+</html>
