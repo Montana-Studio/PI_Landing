@@ -118,7 +118,7 @@ input {
 	border-radius: 5px;
 	padding: 12px 20px;
 	font:{family:$primary_font;size:em(15);}
-	text:{transform:uppercase;}
+	text:{transform:uppercase;} 
 }
 .bg-colorfull {
 	@include background-image(linear-gradient(top, $color_blue 0%, $green_color 100%));
@@ -200,4 +200,12 @@ input {
 }
 #title-mobile-op1 {
 	display: block;
+}
+.bg-menu-sticky {
+	position: fixed;
+	z-index: 999;
+	@extend .animated-bg-menu;
+}
+select {
+    height: 40px;
 }

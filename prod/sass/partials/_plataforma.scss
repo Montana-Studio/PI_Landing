@@ -1,6 +1,7 @@
 .plataforma {
 	@include span-columns(12);
 	padding:{top:130px;bottom:130px;}
+	background: {color:#f4f4f4;}
 	@include media($tabletLandTonotebook) {
 		padding:90px 0;
 	}
@@ -50,7 +51,7 @@
 			    	@include span-columns(9);
 			    	margin: 0 auto !important;
 					float: none;
-			    }
+			    } 
 				li {
 					list-style: none;
 					@include span-columns(2.5);
@@ -73,7 +74,6 @@
 				@include span-columns(12);
 				margin:{top:10px; right: 0; bottom:30px;left:0;}
 				display: none;
-				
 				.title-plat {
 					text:{transform:uppercase;weight:400;}
 			    	font:{size:em(21);}

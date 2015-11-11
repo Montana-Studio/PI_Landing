@@ -24,10 +24,11 @@
 			margin:{top:10px;bottom:30px;}
 		}
 		.title-newsl {
-			@include span-columns(3);
+			@include span-columns(12);
 			color:$green_color;
 			font:{family:$primary_font;size:em(20);weight:300;}
 			text:{transform:capitalize;}
+			margin:{bottom:10px;}
 			@include media($tablet) {
 				@include span-columns(12);
 				margin:15px 0;
@@ -42,7 +43,7 @@
 			}
 		}
 		.form-newsletter {
-			@include span-columns(9);
+			@include span-columns(12);
 			@include media($tablet) {
 				@include span-columns(12);
 			}
@@ -52,21 +53,22 @@
 			@include media($mobileTomobileLand) {
 				@include span-columns(12);
 			}
-			input {
-				@include span-columns(4);
+			.box-form-pi {
+				@include span-columns(2.9);
 				background: none;
 				border:1px solid $third_color; 
 				border-radius:5px;
 				padding: 10px;
 				font:{family:$primary_font;size:em(13);weight:300;}
 				color:$third_color;
+				outline: none;
 				@include media($mobileTomobileLand) {
 					@include span-columns(12);
 					margin:5px 0;
 				}
 			}
 			.button {
-				@include span-columns(4);
+				@include span-columns(3);
 				background: $green_color;
 				border:0;
 				font:{weight:bold;}

@@ -99,6 +99,8 @@ $( document ).ready(function() {
     });
 
 
+
+
 	var $elementAnima = $('#video-descr');//elemento para animar
 	var $elementAnima3 = $('#video-descr');//elemento para animar
 	var $elementAnima4 = $('#video-descr');//elemento para animar
@@ -121,6 +123,19 @@ $( document ).ready(function() {
 
 	function check_if_in_view(){
 
+		var window_top_position2b = $window.scrollTop();
+
+		$.each($animation_elements2b, function(){
+
+			if(window_top_position2b > 100){//ScrollTop PX
+				$animation_elements2b.addClass('bg-menu-sticky');
+			}
+			if(window_top_position2b < 100){//ScrollTop PX
+				$animation_elements2b.removeClass('bg-menu-sticky');
+			}
+
+		}); 
+
 
 		if(document.documentElement.clientWidth >= 1024){
 
@@ -128,10 +143,10 @@ $( document ).ready(function() {
 
 			$.each($animation_elements, function(){
 
-				if(window_top_position > 2600){//ScrollTop PX
+				if(window_top_position > 3200){//ScrollTop PX
 					$animation_elements.removeClass('bottomelements').addClass('topelements');
 				}
-				if(window_top_position < 2400){//ScrollTop PX
+				if(window_top_position < 3200){//ScrollTop PX
 					$animation_elements.removeClass('topelements').addClass('bottomelements');
 				}
 
@@ -144,10 +159,10 @@ $( document ).ready(function() {
 
 			$.each($animation_elements, function(){
 
-				if(window_top_position1 > 2400){//ScrollTop PX
+				if(window_top_position1 > 3300){//ScrollTop PX
 					$animation_elements.removeClass('bottomelements').addClass('topelements');
 				}
-				if(window_top_position1 < 3000){//ScrollTop PX
+				if(window_top_position1 < 3300){//ScrollTop PX
 					$animation_elements.removeClass('topelements').addClass('bottomelements');
 				}
 
@@ -173,10 +188,10 @@ $( document ).ready(function() {
 
 			$.each($animation_elements3, function(){
 
-				if(window_top_position3 > 2800){//ScrollTop PX
+				if(window_top_position3 > 3900){//ScrollTop PX
 					$animation_elements3.removeClass('bottomelements').addClass('topelements');
 				}
-				if(window_top_position3 < 2700){//ScrollTop PX
+				if(window_top_position3 < 3900){//ScrollTop PX
 					$animation_elements3.removeClass('topelements').addClass('bottomelements');
 				}
 
@@ -196,7 +211,7 @@ $( document ).ready(function() {
 			}); 
 		}
 
-		if(document.documentElement.clientWidth <= 670){
+		if(document.documentElement.clientWidth <= 670){ 
 
 			var window_top_position4 = $window.scrollTop();
 
@@ -211,18 +226,6 @@ $( document ).ready(function() {
 
 			});
 
-			var window_top_position2b = $window.scrollTop();
-
-			$.each($animation_elements2b, function(){
-
-				if(window_top_position2b > 100){//ScrollTop PX
-					$animation_elements2b.addClass('bg-menu-mobile');
-				}
-				if(window_top_position2b < 100){//ScrollTop PX
-					$animation_elements2b.removeClass('bg-menu-mobile');
-				}
-
-			}); 
 		}
 
 	}

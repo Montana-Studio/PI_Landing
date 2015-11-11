@@ -127,7 +127,7 @@
   100% { background: rgba(#14826c,0); }
 }
 .icon-rotate {
-	@include animation(icon-rotate .4s ease-out forwards);
+	@include animation(icon-rotate .8s ease-out forwards);
 }
 @include keyframes(icon-rotate) {
 	0% {
