@@ -361,7 +361,7 @@ html {
     background: rgba(20, 130, 108, 0.25); }
   100% {
     background: rgba(20, 130, 108, 0); } }
-.icon-rotate, .icon-plat:hover, .icon-social:hover, .about-us-pi .inside-aboutus .inside-icon-aboutus ul li .icon-about:hover {
+.icon-rotate, .icon-plat:hover, .icon-social:hover, .plataforma .inside-plataforma .content-platform .info-plataforma ul li:hover .icon-plat, .about-us-pi .inside-aboutus .inside-icon-aboutus ul li .icon-about:hover, .footer-pi .social-connect ul li:hover a .icon-social {
   -webkit-animation: icon-rotate 0.8s ease-out forwards;
   -moz-animation: icon-rotate 0.8s ease-out forwards;
   animation: icon-rotate 0.8s ease-out forwards; }

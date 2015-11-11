@@ -110,6 +110,13 @@
 				@include span-columns(4);
 				display: inline-block;
 				list-style: none;
+				&:hover {
+					a {
+						.icon-social {
+							@extend .icon-rotate;	
+						}	
+					}
+				}
 				a {
 					@include span-columns(12);
 					display: table;

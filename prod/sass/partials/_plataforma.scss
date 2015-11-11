@@ -58,6 +58,7 @@
 					float: none;
 					display: inline-block !important;
 					-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
 					.icon-plat {
 						@include span-columns(12);
 						opacity: 0.3;
@@ -168,6 +169,11 @@
 						list-style: none;
 						margin:{bottom:40px;left:0;right:0;}
 						cursor: pointer;
+						&:hover {
+							.icon-plat {
+								@extend .icon-rotate;	
+							}
+						}
 						@include media($desktop) {
 							margin:{bottom:40px;}
 						}
