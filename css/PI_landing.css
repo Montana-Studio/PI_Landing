@@ -361,10 +361,10 @@ html {
     background: rgba(20, 130, 108, 0.25); }
   100% {
     background: rgba(20, 130, 108, 0); } }
-.icon-rotate, .icon-plat:hover, .icon-social:hover {
-  -webkit-animation: icon-rotate 0.4s ease-out forwards;
-  -moz-animation: icon-rotate 0.4s ease-out forwards;
-  animation: icon-rotate 0.4s ease-out forwards; }
+.icon-rotate, .icon-plat:hover, .icon-social:hover, .about-us-pi .inside-aboutus .inside-icon-aboutus ul li .icon-about:hover {
+  -webkit-animation: icon-rotate 0.8s ease-out forwards;
+  -moz-animation: icon-rotate 0.8s ease-out forwards;
+  animation: icon-rotate 0.8s ease-out forwards; }
 
 @-webkit-keyframes icon-rotate {
   0% {
@@ -653,7 +653,7 @@ html {
   -moz-animation-delay: 1.5s;
   animation-delay: 1.5s; }
 
-.animated-bg-menu, .content-home-pi .menu-pi.bg-menu-mobile {
+.animated-bg-menu, .content-home-pi .menu-pi.bg-menu-mobile, .bg-menu-sticky {
   -webkit-animation: animated-bg-menu 0.5s ease-in-out forwards;
   -moz-animation: animated-bg-menu 0.5s ease-in-out forwards;
   animation: animated-bg-menu 0.5s ease-in-out forwards; }
@@ -1334,7 +1334,7 @@ a {
   left: 0;
   right: 0; }
 
-.text-center, .button, .btn-green, .influencers-section, .influencers-section .particles-infl .inside-section, .influencers-section .particles-infl .inside-section .title-section, .plataforma .inside-plataforma, .plataforma .inside-plataforma .platform-title, .plataforma .inside-plataforma .content-platform .img-plataforma {
+.text-center, .button, .btn-green, .influencers-section, .influencers-section .particles-infl .inside-section, .influencers-section .particles-infl .inside-section .title-section, .plataforma .inside-plataforma, .plataforma .inside-plataforma .platform-title, .plataforma .inside-plataforma .content-platform .img-plataforma, .about-us-pi, .about-us-pi .inside-aboutus .aboutus-title, .about-us-pi .inside-aboutus .aboutus-title p, .about-us-pi .inside-aboutus .text-about-icon, .about-us-pi .inside-aboutus .text-about-icon .title-text-app1 {
   text-align: center; }
 
 .text-left, .plataforma .inside-plataforma .content-platform .info-plataforma {
@@ -1563,6 +1563,13 @@ input {
 
 #title-mobile-op1 {
   display: block; }
+
+.bg-menu-sticky {
+  position: fixed;
+  z-index: 999; }
+
+select {
+  height: 40px; }
 
 .cli-section {
   float: left;
@@ -2242,7 +2249,8 @@ input {
   margin-right: 2.35765%;
   width: 100%;
   padding-top: 130px;
-  padding-bottom: 130px; }
+  padding-bottom: 130px;
+  background-color: #f4f4f4; }
   .plataforma:last-child {
     margin-right: 0; }
   @media screen and (min-width: 64em) and (max-width: 90em) {
@@ -2649,6 +2657,383 @@ input {
             .plataforma .inside-plataforma .content-platform .img-plataforma img {
               width: 60%; } }
 
+.about-us-pi {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  padding-top: 130px;
+  padding-bottom: 230px; }
+  .about-us-pi:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 20em) and (max-width: 40em) {
+    .about-us-pi {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+  @media screen and (min-width: 30em) and (max-width: 64em) {
+    .about-us-pi {
+      padding-top: 130px;
+      padding-bottom: 230px; } }
+  @media screen and (min-width: 30em) and (max-width: 43.125em) {
+    .about-us-pi {
+      padding-top: 70px;
+      padding-bottom: 100px; } }
+  @media screen and (min-width: 20em) and (max-width: 40em) {
+    .about-us-pi {
+      padding-top: 65px;
+      padding-bottom: 100px; } }
+  .about-us-pi .inside-aboutus {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    .about-us-pi .inside-aboutus::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .about-us-pi .inside-aboutus .aboutus-title .title-section {
+      color: #6f7c82;
+      float: none;
+      margin: 0 auto;
+      font-family: "Open Sans", sans-serif;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-top: 10px;
+      margin-right: 0;
+      margin-bottom: 30px;
+      margin-left: 0; }
+      .about-us-pi .inside-aboutus .aboutus-title .title-section:last-child {
+        margin-right: 0; }
+      @media screen and (min-width: 64em) and (max-width: 90em) {
+        .about-us-pi .inside-aboutus .aboutus-title .title-section {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin-bottom: 20px; }
+          .about-us-pi .inside-aboutus .aboutus-title .title-section:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 30em) and (max-width: 64em) {
+        .about-us-pi .inside-aboutus .aboutus-title .title-section {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin-bottom: 20px;
+          float: none;
+          margin: 0 auto; }
+          .about-us-pi .inside-aboutus .aboutus-title .title-section:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 30em) and (max-width: 43.125em) {
+        .about-us-pi .inside-aboutus .aboutus-title .title-section {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .about-us-pi .inside-aboutus .aboutus-title .title-section:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 20em) and (max-width: 40em) {
+        .about-us-pi .inside-aboutus .aboutus-title .title-section {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .about-us-pi .inside-aboutus .aboutus-title .title-section:last-child {
+            margin-right: 0; } }
+    .about-us-pi .inside-aboutus .aboutus-title .title-line {
+      background: #02b794;
+      float: none;
+      margin-left: auto;
+      margin-bottom: 20px;
+      margin-right: auto; }
+      @media screen and (min-width: 20em) and (max-width: 40em) {
+        .about-us-pi .inside-aboutus .aboutus-title .title-line {
+          margin-top: 5px; } }
+      @media screen and (min-width: 30em) and (max-width: 43.125em) {
+        .about-us-pi .inside-aboutus .aboutus-title .title-line {
+          margin-top: 0;
+          margin-bottom: 0; } }
+    .about-us-pi .inside-aboutus .aboutus-title p {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      color: #6f7c82;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.125em;
+      font-weight: 300;
+      clear: both;
+      line-height: 2em; }
+      .about-us-pi .inside-aboutus .aboutus-title p::after {
+        clear: both;
+        content: "";
+        display: table; }
+      @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+        .about-us-pi .inside-aboutus .aboutus-title p {
+          max-width: 100%;
+          margin-left: auto;
+          margin-right: auto; }
+          .about-us-pi .inside-aboutus .aboutus-title p::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 30em) and (max-width: 43.125em) {
+        .about-us-pi .inside-aboutus .aboutus-title p {
+          max-width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          padding: 0;
+          font-family: "Open Sans", sans-serif;
+          font-size: 0.75em;
+          font-weight: 300; }
+          .about-us-pi .inside-aboutus .aboutus-title p::after {
+            clear: both;
+            content: "";
+            display: table; }
+          .about-us-pi .inside-aboutus .aboutus-title p:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 20em) and (max-width: 40em) {
+        .about-us-pi .inside-aboutus .aboutus-title p {
+          max-width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          padding: 0;
+          font-family: "Open Sans", sans-serif;
+          font-size: 0.75em;
+          font-weight: 300; }
+          .about-us-pi .inside-aboutus .aboutus-title p::after {
+            clear: both;
+            content: "";
+            display: table; }
+          .about-us-pi .inside-aboutus .aboutus-title p:last-child {
+            margin-right: 0; } }
+    .about-us-pi .inside-aboutus .inside-icon-aboutus {
+      max-width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+      margin-bottom: 0; }
+      .about-us-pi .inside-aboutus .inside-icon-aboutus::after {
+        clear: both;
+        content: "";
+        display: table; }
+      @media screen and (min-width: 64em) and (max-width: 90em) {
+        .about-us-pi .inside-aboutus .inside-icon-aboutus {
+          max-width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 80px; }
+          .about-us-pi .inside-aboutus .inside-icon-aboutus::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+        .about-us-pi .inside-aboutus .inside-icon-aboutus {
+          max-width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 40px; }
+          .about-us-pi .inside-aboutus .inside-icon-aboutus::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 30em) and (max-width: 64em) {
+        .about-us-pi .inside-aboutus .inside-icon-aboutus {
+          max-width: 100%;
+          margin-left: auto;
+          margin-right: auto; }
+          .about-us-pi .inside-aboutus .inside-icon-aboutus::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 30em) and (max-width: 43.125em) {
+        .about-us-pi .inside-aboutus .inside-icon-aboutus {
+          max-width: 100%;
+          margin-left: auto;
+          margin-right: auto; }
+          .about-us-pi .inside-aboutus .inside-icon-aboutus::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 20em) and (max-width: 40em) {
+        .about-us-pi .inside-aboutus .inside-icon-aboutus {
+          max-width: 100%;
+          margin-left: auto;
+          margin-right: auto; }
+          .about-us-pi .inside-aboutus .inside-icon-aboutus::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      .about-us-pi .inside-aboutus .inside-icon-aboutus ul {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        padding: 0;
+        margin: 0; }
+        .about-us-pi .inside-aboutus .inside-icon-aboutus ul:last-child {
+          margin-right: 0; }
+        .about-us-pi .inside-aboutus .inside-icon-aboutus ul li {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 23.23176%;
+          display: inline-block;
+          margin: 0 auto;
+          padding: 0 10px;
+          float: none; }
+          .about-us-pi .inside-aboutus .inside-icon-aboutus ul li:last-child {
+            margin-right: 0; }
+          @media screen and (min-width: 30em) and (max-width: 64em) {
+            .about-us-pi .inside-aboutus .inside-icon-aboutus ul li {
+              padding: 0 10px; } }
+          @media screen and (min-width: 30em) and (max-width: 43.125em) {
+            .about-us-pi .inside-aboutus .inside-icon-aboutus ul li {
+              padding: 0 5px; } }
+          @media screen and (min-width: 20em) and (max-width: 40em) {
+            .about-us-pi .inside-aboutus .inside-icon-aboutus ul li {
+              padding: 0 10px; } }
+          @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+            .about-us-pi .inside-aboutus .inside-icon-aboutus ul li {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 43.70329%;
+              display: inline-block;
+              float: none;
+              margin-top: 30px; }
+              .about-us-pi .inside-aboutus .inside-icon-aboutus ul li:last-child {
+                margin-right: 0; } }
+          @media screen and (min-width: 20em) and (max-width: 40em) {
+            .about-us-pi .inside-aboutus .inside-icon-aboutus ul li {
+              font-size: 0.9375em;
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 100%;
+              margin-top: 20px; }
+              .about-us-pi .inside-aboutus .inside-icon-aboutus ul li:last-child {
+                margin-right: 0; } }
+          .about-us-pi .inside-aboutus .inside-icon-aboutus ul li .icon-about {
+            max-width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            clear: both; }
+            .about-us-pi .inside-aboutus .inside-icon-aboutus ul li .icon-about::after {
+              clear: both;
+              content: "";
+              display: table; }
+            @media screen and (min-width: 20em) and (max-width: 40em) {
+              .about-us-pi .inside-aboutus .inside-icon-aboutus ul li .icon-about {
+                max-width: 35%;
+                margin-left: auto;
+                margin-right: auto; }
+                .about-us-pi .inside-aboutus .inside-icon-aboutus ul li .icon-about::after {
+                  clear: both;
+                  content: "";
+                  display: table; } }
+            .about-us-pi .inside-aboutus .inside-icon-aboutus ul li .icon-about svg {
+              width: 100%;
+              height: auto; }
+          .about-us-pi .inside-aboutus .inside-icon-aboutus ul li .text-about {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 40.29137%;
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block; }
+            .about-us-pi .inside-aboutus .inside-icon-aboutus ul li .text-about:last-child {
+              margin-right: 0; }
+            .about-us-pi .inside-aboutus .inside-icon-aboutus ul li .text-about::after {
+              clear: both;
+              content: "";
+              display: table; }
+    .about-us-pi .inside-aboutus .text-about-icon {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-top: 20px; }
+      .about-us-pi .inside-aboutus .text-about-icon:last-child {
+        margin-right: 0; }
+      @media screen and (min-width: 20em) and (max-width: 40em) {
+        .about-us-pi .inside-aboutus .text-about-icon {
+          margin-top: 10px; } }
+      .about-us-pi .inside-aboutus .text-about-icon .title-text-app1 {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1em;
+        font-weight: 400;
+        color: #6f7c82;
+        min-height: 45px;
+        float: none;
+        margin: 0 auto;
+        text-transform: uppercase; }
+        .about-us-pi .inside-aboutus .text-about-icon .title-text-app1::after {
+          clear: both;
+          content: "";
+          display: table; }
+        @media screen and (min-width: 30em) and (max-width: 64em) {
+          .about-us-pi .inside-aboutus .text-about-icon .title-text-app1 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 1em;
+            font-weight: 400;
+            min-height: 45px; } }
+        @media screen and (min-width: 30em) and (max-width: 43.125em) {
+          .about-us-pi .inside-aboutus .text-about-icon .title-text-app1 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 0.6875em;
+            font-weight: 400;
+            min-height: 45px; } }
+        @media screen and (min-width: 20em) and (max-width: 40em) {
+          .about-us-pi .inside-aboutus .text-about-icon .title-text-app1 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 1em;
+            font-weight: 400;
+            min-height: 20px; } }
+      .about-us-pi .inside-aboutus .text-about-icon .subtitle-text-app1 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.75em;
+        font-weight: 300;
+        color: #6f7c82;
+        margin-top: 10px;
+        line-height: 1.6875em;
+        font-size: 0.875em; }
+        .about-us-pi .inside-aboutus .text-about-icon .subtitle-text-app1:last-child {
+          margin-right: 0; }
+        @media screen and (min-width: 30em) and (max-width: 64em) {
+          .about-us-pi .inside-aboutus .text-about-icon .subtitle-text-app1 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 0.75em;
+            font-weight: 300; } }
+        @media screen and (min-width: 30em) and (max-width: 43.125em) {
+          .about-us-pi .inside-aboutus .text-about-icon .subtitle-text-app1 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 0.625em;
+            font-weight: 300; } }
+        @media screen and (min-width: 20em) and (max-width: 40em) {
+          .about-us-pi .inside-aboutus .text-about-icon .subtitle-text-app1 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 0.75em;
+            font-weight: 300; } }
+
 .footer-pi {
   float: left;
   display: block;
@@ -2714,12 +3099,13 @@ input {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 23.23176%;
+      width: 100%;
       color: #02b794;
       font-family: "Open Sans", sans-serif;
       font-size: 1.25em;
       font-weight: 300;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      margin-bottom: 10px; }
       .footer-pi .newsletter-footer .title-newsl:last-child {
         margin-right: 0; }
       @media screen and (min-width: 48em) and (max-width: 63.9375em) {
@@ -2753,7 +3139,7 @@ input {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 74.41059%; }
+      width: 100%; }
       .footer-pi .newsletter-footer .form-newsletter:last-child {
         margin-right: 0; }
       @media screen and (min-width: 48em) and (max-width: 63.9375em) {
@@ -2780,11 +3166,11 @@ input {
           width: 100%; }
           .footer-pi .newsletter-footer .form-newsletter:last-child {
             margin-right: 0; } }
-      .footer-pi .newsletter-footer .form-newsletter input {
+      .footer-pi .newsletter-footer .form-newsletter .box-form-pi {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 31.76157%;
+        width: 22.37878%;
         background: none;
         border: 1px solid #9e9e9e;
         border-radius: 5px;
@@ -2792,23 +3178,24 @@ input {
         font-family: "Open Sans", sans-serif;
         font-size: 0.8125em;
         font-weight: 300;
-        color: #9e9e9e; }
-        .footer-pi .newsletter-footer .form-newsletter input:last-child {
+        color: #9e9e9e;
+        outline: none; }
+        .footer-pi .newsletter-footer .form-newsletter .box-form-pi:last-child {
           margin-right: 0; }
         @media screen and (min-width: 20em) and (max-width: 40em) {
-          .footer-pi .newsletter-footer .form-newsletter input {
+          .footer-pi .newsletter-footer .form-newsletter .box-form-pi {
             float: left;
             display: block;
             margin-right: 2.35765%;
             width: 100%;
             margin: 5px 0; }
-            .footer-pi .newsletter-footer .form-newsletter input:last-child {
+            .footer-pi .newsletter-footer .form-newsletter .box-form-pi:last-child {
               margin-right: 0; } }
       .footer-pi .newsletter-footer .form-newsletter .button {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 31.76157%;
+        width: 23.23176%;
         background: #02b794;
         border: 0;
         font-weight: bold; }
