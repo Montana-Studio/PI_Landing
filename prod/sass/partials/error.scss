@@ -1,0 +1,219 @@
+.content-error-inside {
+	@include outer-container(65%);
+	@include media($tabletLandTonotebook) {
+		@include outer-container(85%);
+		margin:{top: 150px;}
+	}
+	@include media($mobileLandTotablet) {
+    	@include outer-container(95%);
+    }
+    @include media($mobileTomobileLand) {
+    	@include outer-container(96%);
+    }
+    .content-right {
+    	margin:{top:150px;};
+    	float: right !important;
+		@include span-columns(7);
+	    @include media($notebook) {
+			margin:{top:120px;}
+	    }
+	    @include media($desktop) {
+	    	margin:{top:240px;left:0;right:0;}
+	    }
+	    @include media($notebookLand) {
+			margin:{top:150px;};
+	    }
+	    @include media($mobileLandTotablet) {
+	    	margin:{top:120px;};
+	    	@include span-columns(6);
+	    }
+	    @include media($tabletLand) {
+	    	margin:{top:150px;}
+	    } 
+	    @include media($tablet) {
+	    	@include span-columns(9);
+	    	margin: {top:0px;left: auto !important; bottom:0; right:auto !important;}
+	    	float: none !important;
+	    	text-align: center;
+	    }
+	    @include media($tabletLand) {
+	    	@include span-columns(6);
+	    	margin:{top:160px;}
+	    } 
+	    @include media($mobileTomobileLand) {
+	    	@include span-columns(11);
+	    	float: none !important;
+			margin:{top: 83px !important;left:auto !important;right:auto !important;}
+	    	text:{align: center;}
+	    }
+	    @include media($mobileLand) {
+	    	@include span-columns(6);
+	    	margin:{top:140px;};
+	    	float: right !important;
+	    }
+	    h1 {
+			@extend .title-home-animtns;
+			@extend .no-margins;
+			font:{family:$primary_font;size:em(60);weight:300;}
+			opacity: 0;
+			color:$green_color;	
+			line-height: 64px;
+			@include media($desktop) {
+				font-size: 52px;
+				line-height: 74px;
+			}
+			@include media($notebookLand) {
+				font:{size:em(55)}
+				line-height:74px;
+			}
+			@include media($mobileLandTotablet) {
+		    	font-size: 23px;
+    			line-height: 36px;
+		    }
+			@include media($tabletLand) {
+				font-size: 40px;
+    			line-height: 53px;
+			}
+			@include media($tablet) {
+				font-size: 36px;
+				line-height: 50px;
+			}
+		    @include media($mobileTomobileLand) {
+		    	font-size: 20px;
+    			line-height: 31px;
+		    }
+		    @include media($mobileLand) {
+		    	text:{align:left;}
+		    	font:{size:23px;}
+				line-height:30px;
+		    }
+		}
+		h2 {
+			@extend .subtitle-home-animtns;
+			opacity: 0;
+			font:{family:$primary_font;size:em(25);weight:300;}
+			color:$first_color;
+			letter-spacing: 1px;
+			margin:{top:15px; bottom:20px;}
+			line-height: 1.6em;
+			@include media($mobileLandTotablet) {
+		    	margin:{top:10px; bottom:10px;}
+		    	font:{size:1.3em}
+		    }
+		    @include media($tablet) {
+				margin:{top:0;bottom:40px;}
+				font:{size: 25px;}
+			}
+		    @include media($mobileTomobileLand) {
+		    	font:{size:em(15);}
+		    	line-height: 1.2em;
+		    	margin:{top:10px;}
+		    }
+		    @include media($mobileLand) {
+		    	text:{align:left;}
+		    	font:{size:16px;}
+		    }
+		}
+		.button {
+			@include span-columns(6);
+			opacity: 0;
+			@include media($tablet) {
+		    	margin:0 auto !important;
+		    	float: none !important;
+		    }
+		     @include media($mobileLand) {
+		    	margin:0 auto !important;
+		    	float: none !important;
+		    }
+		    @include media($mobileTomobileLand) {
+		    	margin:0 auto !important;
+		    	float: none !important;
+		    }
+		     @include media($tabletLand) {
+		    	margin:{top:15px;}
+		    	@include span-columns(6);
+		    } 
+		    @include media($mobileLand) {
+		    	margin:{left:0 !important;}
+		    	a {
+		    		padding:9px 10px;
+		    	}
+		    }
+		    @include media($mobile) {
+		    	margin:0 auto !important;
+		    	float: none !important;
+		    }
+			&.home-btnone {
+				float: left;
+			}
+			&.home-btntwo {
+				float: none;
+			}
+		}
+    }
+    .content-left {
+    	margin:{top:260px;};
+    	float: left !important;
+		@include span-columns(5);
+		@include media($desktop) {
+			margin:{top:180px;}
+		}	
+		@include media($notebook) {
+	    	margin:{top:140px;}
+	    }
+		@include media($notebookTodesktop) {
+	    	margin:{top:200px;}
+	    }
+		@include media($mobileLandTotablet) {
+			@include span-columns(6);
+	    	margin:{top:130px;}
+	    }
+	    @include media($tablet) {
+	    	@include span-columns(8);
+	    	text-align: center;
+	    	margin: {top:190px; left: auto !important; bottom:0; right: auto !important;}
+   			display: block;
+    		float: none !important;
+	    }
+	    @include media($tabletLand) {
+	    	@include span-columns(6);
+	    	margin:{top:125px;}
+	    } 
+	    @include media($mobileTomobileLand) {
+	    	@include span-columns(12);
+	    	float: none;
+			margin:{top:50px;left:auto !important;right:auto !important;}
+	    	text:{align: center;}
+	    }
+	    @include media($mobileLand) {
+	    	@include span-columns(6);
+			margin:{top: 130px;left:auto !important;right:auto !important;}
+	    	text:{align: center;}
+	    }
+	    @include media($mobile) {
+	    	margin:{top:0;}
+	    }
+		#icon-warning-pi {
+			@include outer-container(66%);
+			overflow: visible;
+			@include media($desktop) {
+				@include outer-container(73%);
+			}	
+			@include media($notebook) {
+				@include outer-container(75%);
+			}
+			@include media($notebookTodesktop) {
+		    	@include outer-container(77%);
+		    }
+		    @include media($tabletLand) {
+		    	@include outer-container(80%);
+		    }	
+			svg {
+				overflow: visible;
+				width: 100%;
+				height: auto;
+				display: block;
+			}	
+		}
+    }
+}
