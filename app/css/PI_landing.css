@@ -1073,29 +1073,42 @@ html {
           content: "";
           display: table; } }
     .content-home-pi .content-home-inside .content-slidr {
-      margin-top: 250px;
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 48.82117%;
+      position: absolute;
+      bottom: 260px; }
       .content-home-pi .content-home-inside .content-slidr:last-child {
         margin-right: 0; }
-      @media screen and (min-width: 64em) and (max-width: 90em) {
+      @media screen and (min-width: 80em) {
         .content-home-pi .content-home-inside .content-slidr {
           margin-left: 0;
           margin-right: 0;
-          margin-top: 150px; } }
-      @media screen and (min-width: 30em) and (max-width: 64em) {
+          bottom: 260px; } }
+      @media screen and (min-width: 90em) {
         .content-home-pi .content-home-inside .content-slidr {
-          margin-top: 85px; } }
-      @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%;
+          bottom: 400px; }
+          .content-home-pi .content-home-inside .content-slidr:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 80em) and (min-width: 90em) {
         .content-home-pi .content-home-inside .content-slidr {
-          margin-top: 150px; } }
+          bottom: 400px; } }
       @media screen and (min-width: 48em) and (max-width: 63.9375em) {
         .content-home-pi .content-home-inside .content-slidr {
-          margin: 130px auto 0;
+          margin: 0 auto 0;
           float: none;
-          text-align: center; } }
+          text-align: center;
+          left: 0;
+          right: 0;
+          bottom: 400px; } }
+      @media screen and (min-width: 30em) and (max-width: 43.125em) {
+        .content-home-pi .content-home-inside .content-slidr {
+          right: 34px; } }
       @media screen and (min-width: 20em) and (max-width: 40em) {
         .content-home-pi .content-home-inside .content-slidr {
           float: left;
@@ -1103,12 +1116,18 @@ html {
           margin-right: 2.35765%;
           width: 82.94039%;
           float: none;
-          margin-top: 100px;
           margin-left: auto;
           margin-right: auto;
-          text-align: center; }
+          text-align: center;
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+          right: 0; }
           .content-home-pi .content-home-inside .content-slidr:last-child {
             margin-right: 0; } }
+      @media screen and (max-width: 20em) {
+        .content-home-pi .content-home-inside .content-slidr {
+          bottom: 180px; } }
       .content-home-pi .content-home-inside .content-slidr h1 {
         opacity: 0;
         font-family: "Open Sans", sans-serif;
@@ -1118,11 +1137,14 @@ html {
         @media screen and (min-width: 64em) and (max-width: 90em) {
           .content-home-pi .content-home-inside .content-slidr h1 {
             font-size: 3.4375em;
-            line-height: 1.5em; } }
+            line-height: 1.3em; } }
         @media screen and (min-width: 30em) and (max-width: 64em) {
           .content-home-pi .content-home-inside .content-slidr h1 {
             font-size: 3em;
             line-height: 1.1em; } }
+        @media screen and (min-width: 30em) and (max-width: 43.125em) {
+          .content-home-pi .content-home-inside .content-slidr h1 {
+            font-size: 29px; } }
         @media screen and (min-width: 20em) and (max-width: 40em) {
           .content-home-pi .content-home-inside .content-slidr h1 {
             font-size: 1.875em;
@@ -1130,13 +1152,13 @@ html {
       .content-home-pi .content-home-inside .content-slidr h2 {
         opacity: 0;
         font-family: "Open Sans", sans-serif;
-        font-size: 1.5625em;
+        font-size: 19px;
         font-weight: 300;
         color: #6f7c82;
         letter-spacing: 1px;
         margin-top: 0;
         margin-bottom: 20px;
-        line-height: 1.6em; }
+        line-height: 1.8em; }
         @media screen and (min-width: 30em) and (max-width: 64em) {
           .content-home-pi .content-home-inside .content-slidr h2 {
             margin-top: 10px;
@@ -1145,6 +1167,10 @@ html {
         @media screen and (min-width: 48em) and (max-width: 63.9375em) {
           .content-home-pi .content-home-inside .content-slidr h2 {
             margin-bottom: 40px; } }
+        @media screen and (min-width: 30em) and (max-width: 43.125em) {
+          .content-home-pi .content-home-inside .content-slidr h2 {
+            font-size: 14px;
+            line-height: 22px; } }
         @media screen and (min-width: 20em) and (max-width: 40em) {
           .content-home-pi .content-home-inside .content-slidr h2 {
             font-size: 0.9375em;
